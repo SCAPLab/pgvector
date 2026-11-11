@@ -1,0 +1,22 @@
+2026-11-04 11:22:00.240 KST [41493] LOG:  starting PostgreSQL 17.11 (Ubuntu 17.11-1.pgdg24.04+2) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-11-04 11:22:00.246 KST [41493] LOG:  listening on Unix socket "/home/dccmercury/kcs2027/ivf-frag/run/.s.PGSQL.5433"
+2026-11-04 11:22:00.265 KST [41497] LOG:  database system was shut down at 2026-11-04 11:21:58 KST
+2026-11-04 11:22:00.277 KST [41493] LOG:  database system is ready to accept connections
+2026-11-04 11:22:00.303 KST [41493] LOG:  received fast shutdown request
+2026-11-04 11:22:00.308 KST [41493] LOG:  aborting any active transactions
+2026-11-04 11:22:00.312 KST [41493] LOG:  background worker "logical replication launcher" (PID 41500) exited with exit code 1
+2026-11-04 11:22:00.312 KST [41495] LOG:  shutting down
+2026-11-04 11:22:00.316 KST [41495] LOG:  checkpoint starting: shutdown immediate
+2026-11-04 11:22:00.349 KST [41495] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.007 s, total=0.038 s; sync files=3, longest=0.004 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=9/33AD16B8, redo lsn=9/33AD16B8
+2026-11-04 11:22:00.359 KST [41493] LOG:  database system is shut down
+2026-11-04 11:22:00.462 KST [41508] LOG:  starting PostgreSQL 17.11 (Ubuntu 17.11-1.pgdg24.04+2) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-11-04 11:22:00.467 KST [41508] LOG:  listening on Unix socket "/home/dccmercury/kcs2027/ivf-frag/run/.s.PGSQL.5433"
+2026-11-04 11:22:00.485 KST [41512] LOG:  database system was shut down at 2026-11-04 11:22:00 KST
+2026-11-04 11:22:00.495 KST [41508] LOG:  database system is ready to accept connections
+2026-11-04 11:22:09.795 KST [41508] LOG:  received fast shutdown request
+2026-11-04 11:22:09.800 KST [41508] LOG:  aborting any active transactions
+2026-11-04 11:22:09.804 KST [41508] LOG:  background worker "logical replication launcher" (PID 41515) exited with exit code 1
+2026-11-04 11:22:09.804 KST [41510] LOG:  shutting down
+2026-11-04 11:22:09.809 KST [41510] LOG:  checkpoint starting: shutdown immediate
+2026-11-04 11:22:09.839 KST [41510] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.004 s, total=0.036 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=9/33AD1730, redo lsn=9/33AD1730
+2026-11-04 11:22:09.849 KST [41508] LOG:  database system is shut down

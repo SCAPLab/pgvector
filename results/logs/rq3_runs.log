@@ -1,0 +1,152 @@
+governor=performance
+Warning: The unit file, source configuration file or drop-ins of apt-daily.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped apt-daily.timer
+Warning: The unit file, source configuration file or drop-ins of apt-daily-upgrade.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped apt-daily-upgrade.timer
+Warning: The unit file, source configuration file or drop-ins of anacron.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped anacron.timer
+Warning: The unit file, source configuration file or drop-ins of fstrim.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped fstrim.timer
+Warning: The unit file, source configuration file or drop-ins of e2scrub_all.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped e2scrub_all.timer
+Warning: The unit file, source configuration file or drop-ins of fwupd-refresh.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped fwupd-refresh.timer
+Warning: The unit file, source configuration file or drop-ins of man-db.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped man-db.timer
+Warning: The unit file, source configuration file or drop-ins of logrotate.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped logrotate.timer
+Warning: The unit file, source configuration file or drop-ins of dpkg-db-backup.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped dpkg-db-backup.timer
+Warning: The unit file, source configuration file or drop-ins of sysstat-collect.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped sysstat-collect.timer
+Warning: The unit file, source configuration file or drop-ins of sysstat-summary.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped sysstat-summary.timer
+Warning: The unit file, source configuration file or drop-ins of update-notifier-download.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped update-notifier-download.timer
+Warning: The unit file, source configuration file or drop-ins of motd-news.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped motd-news.timer
+Warning: The unit file, source configuration file or drop-ins of snapd.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+Stopping 'snapd.service', but its triggering units are still active:
+snapd.socket
+stopped snapd.service
+Warning: The unit file, source configuration file or drop-ins of snapd.socket changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped snapd.socket
+[2026-11-04 12:03:55] ===== 회차 1
+[2026-11-04 12:03:55] run mem_L30_W0_r1: mem=mem load=30% (15.46 QPS) workers=0
+[2026-11-04 12:21:10]   재빌드 703초
+[2026-11-04 12:26:12]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 12:29:46] rq3: recall@10 = 0.9811 (tie-aware 0.9812)
+  재빌드 703s, tps 15.395425, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9811
+[2026-11-04 12:29:46] run io_L60_W0_r1: mem=io load=60% (4.65 QPS) workers=0
+[2026-11-04 12:49:28]   재빌드 856초
+[2026-11-04 12:54:36]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 12:57:57] rq3: recall@10 = 0.9814 (tie-aware 0.9815)
+  재빌드 856s, tps 4.692102, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9814
+[2026-11-04 12:57:58] run io_L90_W0_r1: mem=io load=90% (6.97 QPS) workers=0
+[2026-11-04 13:18:55]   재빌드 931초
+[2026-11-04 13:23:57]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 13:27:21] rq3: recall@10 = 0.9818 (tie-aware 0.9818)
+  재빌드 931s, tps 6.50164, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9818
+[2026-11-04 13:27:21] run mem_L60_W0_r1: mem=mem load=60% (30.91 QPS) workers=0
+[2026-11-04 13:46:58]   재빌드 844초
+[2026-11-04 13:52:00]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 13:55:32] rq3: recall@10 = 0.9814 (tie-aware 0.9815)
+  재빌드 844s, tps 30.820345, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9814
+[2026-11-04 13:55:32] run mem_L30_W4_r1: mem=mem load=30% (15.46 QPS) workers=4
+[2026-11-04 14:06:04]   재빌드 300초
+[2026-11-04 14:11:06]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 14:14:41] rq3: recall@10 = 0.9819 (tie-aware 0.9820)
+  재빌드 300s, tps 15.405062, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9819
+[2026-11-04 14:14:42] run mem_L60_W2_r1: mem=mem load=60% (30.91 QPS) workers=2
+[2026-11-04 14:27:45]   재빌드 451초
+[2026-11-04 14:32:47]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 14:36:19] rq3: recall@10 = 0.9821 (tie-aware 0.9821)
+  재빌드 451s, tps 30.997967, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9821
+[2026-11-04 14:36:19] run io_L30_W4_r1: mem=io load=30% (2.32 QPS) workers=4
+[2026-11-04 14:46:59]   재빌드 313초
+[2026-11-04 14:52:13]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 14:55:36] rq3: recall@10 = 0.9822 (tie-aware 0.9822)
+  재빌드 313s, tps 2.278652, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9822
+[2026-11-04 14:55:36] run io_L60_W4_r1: mem=io load=60% (4.65 QPS) workers=4
+[2026-11-04 15:07:09]   재빌드 366초
+[2026-11-04 15:12:13]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 15:15:34] rq3: recall@10 = 0.9820 (tie-aware 0.9820)
+  재빌드 366s, tps 4.556872, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9820
+[2026-11-04 15:15:34] run mem_L90_W0_r1: mem=mem load=90% (46.37 QPS) workers=0
+[2026-11-04 15:46:53]   재빌드 1547초
+[2026-11-04 15:51:53]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 15:55:26] rq3: recall@10 = 0.9813 (tie-aware 0.9813)
+  재빌드 1547s, tps 44.508772, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9813
+[2026-11-04 15:55:26] run io_L60_W2_r1: mem=io load=60% (4.65 QPS) workers=2
+[2026-11-04 16:08:26]   재빌드 453초
+[2026-11-04 16:13:33]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 16:16:58] rq3: recall@10 = 0.9815 (tie-aware 0.9815)
+  재빌드 453s, tps 4.69351, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9815
+[2026-11-04 16:16:58] run io_L30_W2_r1: mem=io load=30% (2.32 QPS) workers=2
+[2026-11-04 16:28:34]   재빌드 370초
+[2026-11-04 16:33:51]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 16:37:15] rq3: recall@10 = 0.9820 (tie-aware 0.9820)
+  재빌드 370s, tps 2.225532, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9820
+[2026-11-04 16:37:15] run io_L90_W4_r1: mem=io load=90% (6.97 QPS) workers=4
+[2026-11-04 16:49:58]   재빌드 438초
+[2026-11-04 16:55:00]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 16:58:22] rq3: recall@10 = 0.9810 (tie-aware 0.9810)
+  재빌드 438s, tps 6.662208, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9810
+[2026-11-04 16:58:22] run mem_L90_W2_r1: mem=mem load=90% (46.37 QPS) workers=2
+[2026-11-04 17:26:08]   재빌드 1334초
+[2026-11-04 17:31:08]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 17:34:38] rq3: recall@10 = 0.9816 (tie-aware 0.9816)
+  재빌드 1334s, tps 43.202629, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9816
+[2026-11-04 17:34:38] run io_L30_W0_r1: mem=io load=30% (2.32 QPS) workers=0
+[2026-11-04 17:52:21]   재빌드 737초
+[2026-11-04 17:57:29]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 18:00:52] rq3: recall@10 = 0.9810 (tie-aware 0.9811)
+  재빌드 737s, tps 2.351189, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9810
+[2026-11-04 18:00:52] run mem_L60_W4_r1: mem=mem load=60% (30.91 QPS) workers=4
+[2026-11-04 18:12:54]   재빌드 389초
+[2026-11-04 18:17:55]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 18:21:29] rq3: recall@10 = 0.9822 (tie-aware 0.9822)
+  재빌드 389s, tps 30.889647, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9822
+[2026-11-04 18:21:30] run io_L90_W2_r1: mem=io load=90% (6.97 QPS) workers=2
+[2026-11-04 18:35:44]   재빌드 528초
+[2026-11-04 18:40:45]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 18:44:08] rq3: recall@10 = 0.9812 (tie-aware 0.9812)
+  재빌드 528s, tps 6.608971, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9812
+[2026-11-04 18:44:09] run mem_L90_W4_r1: mem=mem load=90% (46.37 QPS) workers=4
+[2026-11-04 19:05:51]   재빌드 970초
+[2026-11-04 19:10:51]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 19:14:21] rq3: recall@10 = 0.9811 (tie-aware 0.9811)
+  재빌드 970s, tps 41.072075, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9811
+[2026-11-04 19:14:21] run mem_L30_W2_r1: mem=mem load=30% (15.46 QPS) workers=2
+Warning: The unit file, source configuration file or drop-ins of apt-daily.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started apt-daily.timer
+Warning: The unit file, source configuration file or drop-ins of apt-daily-upgrade.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started apt-daily-upgrade.timer
+Warning: The unit file, source configuration file or drop-ins of anacron.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started anacron.timer
+Warning: The unit file, source configuration file or drop-ins of fstrim.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started fstrim.timer
+Warning: The unit file, source configuration file or drop-ins of e2scrub_all.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started e2scrub_all.timer
+Warning: The unit file, source configuration file or drop-ins of fwupd-refresh.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started fwupd-refresh.timer
+Warning: The unit file, source configuration file or drop-ins of man-db.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started man-db.timer
+Warning: The unit file, source configuration file or drop-ins of logrotate.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started logrotate.timer
+Warning: The unit file, source configuration file or drop-ins of dpkg-db-backup.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started dpkg-db-backup.timer
+Warning: The unit file, source configuration file or drop-ins of sysstat-collect.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started sysstat-collect.timer
+Warning: The unit file, source configuration file or drop-ins of sysstat-summary.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started sysstat-summary.timer
+Warning: The unit file, source configuration file or drop-ins of update-notifier-download.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started update-notifier-download.timer
+Warning: The unit file, source configuration file or drop-ins of motd-news.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started motd-news.timer
+Warning: The unit file, source configuration file or drop-ins of snapd.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+started snapd.service
+Warning: The unit file, source configuration file or drop-ins of snapd.socket changed on disk. Run 'systemctl daemon-reload' to reload units.
+started snapd.socket
+governor=schedutil
+[2026-11-04 19:21:33] 정리 끝 (exit 130)

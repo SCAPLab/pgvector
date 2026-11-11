@@ -1,0 +1,12 @@
+[2026-11-04 11:22:09] 최대 QPS 측정: io
+NOTICE:  database "rq3" does not exist, skipping
+latency average = 2072.184 ms tps = 7.721321 (without initial connection time) 
+latency average = 2064.682 ms tps = 7.749377 (without initial connection time) 
+latency average = 2051.184 ms tps = 7.800375 (without initial connection time) 
+io: max QPS 7.75 (runs [7.721321, 7.749377, 7.800375])
+[2026-11-04 11:26:11] 최대 QPS 측정: mem
+latency average = 310.312 ms tps = 51.560972 (without initial connection time) 
+latency average = 310.542 ms tps = 51.522853 (without initial connection time) 
+latency average = 312.935 ms tps = 51.128835 (without initial connection time) 
+mem: max QPS 51.52 (runs [51.560972, 51.522853, 51.128835])
+[2026-11-04 11:30:15] 정리 끝 (exit 0)

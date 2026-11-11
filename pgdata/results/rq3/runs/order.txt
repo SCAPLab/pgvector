@@ -1,0 +1,19 @@
+round 1
+mem 30 0
+io 60 0
+io 90 0
+mem 60 0
+mem 30 4
+mem 60 2
+io 30 4
+io 60 4
+mem 90 0
+io 60 2
+io 30 2
+io 90 4
+mem 90 2
+io 30 0
+mem 60 4
+io 90 2
+mem 90 4
+mem 30 2

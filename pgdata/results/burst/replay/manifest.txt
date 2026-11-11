@@ -1,0 +1,28 @@
+start: 2026-11-04 21:20:53
+rounds: 2  sample: 500
+kernel: 7.0.0-42-generic
+governor: performance
+max_sectors_kb: 128
+postgres_was_running (측정 중 정지, 끝나면 재시작): 1
+round 1
+burst_base 256,8,1024,4,128,16,64,32,512
+burst_s1 8,128,16,512,4,256,32,1024,64
+burst_s16 256,512,1024,4,128,32,64,8,16
+burst_s512 4,16,128,256,64,1024,512,32,8
+start: 2026-11-04 21:21:21
+rounds: 2  sample: 500
+kernel: 7.0.0-42-generic
+governor: performance
+max_sectors_kb: 128
+postgres_was_running (측정 중 정지, 끝나면 재시작): 1
+round 1
+burst_base 256,8,1024,4,128,16,64,32,512
+burst_s1 8,128,16,512,4,256,32,1024,64
+burst_s16 256,512,1024,4,128,32,64,8,16
+burst_s512 4,16,128,256,64,1024,512,32,8
+round 2
+burst_s16 128,4,64,1024,32,16,512,256,8
+burst_s512 128,64,32,4,512,256,1024,8,16
+burst_s1 16,1024,64,4,32,128,8,256,512
+burst_base 512,64,8,128,32,16,256,1024,4
+end: 2026-11-04 21:27:57

@@ -1,0 +1,164 @@
+{
+ "name": "mem_L60_W0_r1",
+ "mem": "mem",
+ "load_pct": 60,
+ "workers": 0,
+ "target_qps": 30.91,
+ "rebuild_seconds": 844.0136022567749,
+ "wal_written_gib": 4.531066536903381,
+ "new_index_gib": 4.587677001953125,
+ "recall_after": 0.98141,
+ "pgbench_ended_early": false,
+ "parallel_workers_seen": 0,
+ "parallel_workers_max_concurrent": 0,
+ "max_extra_disk_gib": 9.114143371582031,
+ "rebuild_phases_s": {
+  "building index: performing k-means": 125.9,
+  "building index: assigning tuples": 639.5,
+  "building index: loading tuples": 56.0,
+  "index validation: scanning index": 7.7,
+  "index validation: sorting tuples": 1.0,
+  "index validation: scanning table": 12.5,
+  "waiting for old snapshots": 0.0,
+  "waiting for readers before dropping": 0.6
+ },
+ "phases": {
+  "baseline": {
+   "queries": 7500,
+   "seconds": 240.004301071167,
+   "arrival_qps": 31.249439974728084,
+   "lat_ms_mean": 121.1810296,
+   "lat_ms_p50": 107.2515,
+   "lat_ms_p95": 220.80529999999996,
+   "lat_ms_p99": 285.52665,
+   "lat_ms_max": 456.42,
+   "lag_ms_mean": 5.356640533333334,
+   "p99_of_1s_p99": 228.58724999999998,
+   "wait_query": {
+    "by_type": {
+     "CPU": 0.9615,
+     "IO": 0.0385
+    },
+    "top_events": {
+     "CPU:-": 0.9615,
+     "IO:BuffileWrite": 0.0283,
+     "IO:DataFileRead": 0.0058,
+     "IO:BuffileRead": 0.0044
+    },
+    "samples": 8652
+   },
+   "system": {
+    "r_iops": 171.16763149697016,
+    "r_mbps": 1.3390374856208607,
+    "r_await_ms": 0.09558749999999999,
+    "w_iops": 1.3335005002675673,
+    "w_mbps": 0.021273835745003588,
+    "w_await_ms": 0.5606583333333333,
+    "util": 0.016667083333333336,
+    "cpu_busy": 0.11431583333333334,
+    "cpu_iowait": 0.00045541666666666663
+   }
+  },
+  "rebuild": {
+   "queries": 26095,
+   "seconds": 844.0136022567749,
+   "arrival_qps": 30.91774816214526,
+   "lat_ms_mean": 139.73650726192756,
+   "lat_ms_p50": 116.028,
+   "lat_ms_p95": 279.1482,
+   "lat_ms_p99": 456.78668000000005,
+   "lat_ms_max": 1406.719,
+   "lag_ms_mean": 8.849415596857636,
+   "p99_of_1s_p99": 246.6762799999999,
+   "wait_query": {
+    "by_type": {
+     "CPU": 0.9147,
+     "IO": 0.085,
+     "Client": 0.0001,
+     "LWLock": 0.0001,
+     "Timeout": 0.0,
+     "IPC": 0.0
+    },
+    "top_events": {
+     "CPU:-": 0.9147,
+     "IO:DataFileRead": 0.047,
+     "IO:BuffileWrite": 0.0316,
+     "IO:BuffileRead": 0.0062,
+     "IO:DataFileWrite": 0.0002,
+     "Client:ClientRead": 0.0001
+    },
+    "samples": 34117
+   },
+   "wait_rebuild_leader": {
+    "by_type": {
+     "CPU": 0.8923,
+     "IO": 0.1005,
+     "LWLock": 0.0068,
+     "Lock": 0.0005
+    },
+    "top_events": {
+     "CPU:-": 0.8923,
+     "IO:DataFileRead": 0.0531,
+     "IO:DataFileExtend": 0.0299,
+     "IO:DataFileWrite": 0.0065,
+     "LWLock:WALWrite": 0.006,
+     "IO:BuffileWrite": 0.0044
+    },
+    "samples": 8440
+   },
+   "wait_rebuild_workers": {},
+   "system": {
+    "r_iops": 2178.0380978346666,
+    "r_mbps": 24.554541612125227,
+    "r_await_ms": 0.13319668246445496,
+    "w_iops": 1053.5226971831446,
+    "w_mbps": 18.740231972570964,
+    "w_await_ms": 0.4956161137440758,
+    "util": 0.10191350710900474,
+    "cpu_busy": 0.15195829383886256,
+    "cpu_iowait": 0.007046563981042655
+   }
+  },
+  "after": {
+   "queries": 9110,
+   "seconds": 300,
+   "arrival_qps": 30.366666666666667,
+   "lat_ms_mean": 5120.449167069155,
+   "lat_ms_p50": 741.058,
+   "lat_ms_p95": 17173.217999999997,
+   "lat_ms_p99": 19933.63117,
+   "lat_ms_max": 23361.466,
+   "lag_ms_mean": 4789.9286777167945,
+   "p99_of_1s_p99": 3379.530115,
+   "wait_query": {
+    "by_type": {
+     "IO": 0.6257,
+     "CPU": 0.3722,
+     "IPC": 0.002,
+     "Client": 0.0,
+     "Timeout": 0.0
+    },
+    "top_events": {
+     "IO:DataFileRead": 0.6106,
+     "CPU:-": 0.3722,
+     "IO:BuffileWrite": 0.0124,
+     "IO:BuffileRead": 0.0027,
+     "IPC:BufferIo": 0.002,
+     "Client:ClientRead": 0.0
+    },
+    "samples": 30155
+   },
+   "system": {
+    "r_iops": 50906.6668407478,
+    "r_mbps": 397.72695418593287,
+    "r_await_ms": 0.10412000000000002,
+    "w_iops": 18.530174290836257,
+    "w_mbps": 0.1587241679591593,
+    "w_await_ms": 0.67205,
+    "util": 0.6246203333333333,
+    "cpu_busy": 0.13969566666666666,
+    "cpu_iowait": 0.17114366666666667
+   }
+  }
+ }
+}

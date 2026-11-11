@@ -1,0 +1,41 @@
+[2026-11-03 19:36:53] base 앞 10000000개 스트리밍 다운로드
+[2026-11-03 19:39:48] query 다운로드
+[2026-11-03 19:39:54] groundtruth 다운로드
+[2026-11-03 19:41:37] 파일 목록
+/home/dccmercury/kcs2027/ivf-frag/data/raw:
+total 1815492
+-rw-rw-r-- 1 dccmercury dccmercury  536740006 Nov  3 19:41 bigann_gnd.tar.gz
+-rw-rw-r-- 1 dccmercury dccmercury    1320000 Nov  3 19:39 bigann_query.bvecs
+-rw-rw-r-- 1 dccmercury dccmercury     986411 Nov  3 19:39 bigann_query.bvecs.gz
+drwxrwxr-x 3 dccmercury dccmercury       4096 Nov  3 19:41 gnd
+-rw-rw-r-- 1 dccmercury dccmercury 1320000000 Nov  3 19:39 sift10m.bvecs
+
+/home/dccmercury/kcs2027/ivf-frag/data/raw/gnd/gnd:
+total 782084
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 dis_1000M.fvecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 dis_100M.fvecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 dis_10M.fvecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 dis_1M.fvecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 dis_200M.fvecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 dis_20M.fvecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 dis_2M.fvecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 dis_500M.fvecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 dis_50M.fvecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 dis_5M.fvecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 idx_1000M.ivecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 idx_100M.ivecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 idx_10M.ivecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 idx_1M.ivecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 idx_200M.ivecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 idx_20M.ivecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 idx_2M.ivecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 idx_500M.ivecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 idx_50M.ivecs
+-r--r--r-- 1 dccmercury dccmercury 40040000 Sep 24  2010 idx_5M.ivecs
+-rw-r--r-- 1 dccmercury dccmercury     1375 Sep 25  2010 README
+[2026-11-03 19:41:37] sha256
+8b2ab2f6a65e5c21c067b7267059cb7a9dfa3212bdc6d0462872d1403497d3ef  sift10m.bvecs
+d3a86cad074451910b072155330c16fe142425daed2d398d79da4335059f663e  bigann_query.bvecs
+59b0b5d33ee308c1870e1a376c4734bd2d13b469a0e8d8598ad06d509f40b599  bigann_gnd.tar.gz
+84562761b14f7a87454c21ba142dc529fb45c2e2f1ed1ad04221c7f0f755b643  bigann_query.bvecs.gz
+[2026-11-03 19:41:38] 완료

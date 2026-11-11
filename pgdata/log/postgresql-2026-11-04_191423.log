@@ -1,0 +1,25 @@
+2026-11-04 19:14:23.573 KST [69273] LOG:  starting PostgreSQL 17.11 (Ubuntu 17.11-1.pgdg24.04+2) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-11-04 19:14:23.578 KST [69273] LOG:  listening on Unix socket "/home/dccmercury/kcs2027/ivf-frag/run/.s.PGSQL.5433"
+2026-11-04 19:14:23.597 KST [69277] LOG:  database system was shut down at 2026-11-04 19:14:22 KST
+2026-11-04 19:14:23.610 KST [69273] LOG:  database system is ready to accept connections
+2026-11-04 19:14:23.719 KST [69275] LOG:  checkpoint starting: immediate force wait
+2026-11-04 19:14:23.774 KST [69275] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.028 s, sync=0.007 s, total=0.056 s; sync files=3, longest=0.004 s, average=0.003 s; distance=4 kB, estimate=4 kB; lsn=1E/CDC0D880, redo lsn=1E/CDC0D828
+2026-11-04 19:14:23.808 KST [69275] LOG:  checkpoint starting: immediate force wait flush-all
+2026-11-04 19:14:23.856 KST [69275] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.018 s, sync=0.007 s, total=0.048 s; sync files=4, longest=0.005 s, average=0.002 s; distance=5 kB, estimate=5 kB; lsn=1E/CDC0F000, redo lsn=1E/CDC0EFA8
+2026-11-04 19:14:46.734 KST [69275] LOG:  checkpoint starting: immediate force wait
+2026-11-04 19:14:46.765 KST [69275] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.012 s, sync=0.001 s, total=0.031 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=5 kB; lsn=1E/CDC0F138, redo lsn=1E/CDC0F0E0
+2026-11-04 19:14:46.784 KST [69275] LOG:  checkpoint starting: immediate force wait
+2026-11-04 19:14:46.824 KST [69275] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.016 s, sync=0.006 s, total=0.041 s; sync files=2, longest=0.005 s, average=0.003 s; distance=0 kB, estimate=4 kB; lsn=1E/CDC0F250, redo lsn=1E/CDC0F1F8
+2026-11-04 19:21:30.668 KST [69738] ERROR:  canceling statement due to user request
+2026-11-04 19:21:30.668 KST [69738] STATEMENT:  REINDEX (VERBOSE) INDEX CONCURRENTLY items_ivf
+2026-11-04 19:21:30.955 KST [69349] LOG:  could not send data to client: Broken pipe
+2026-11-04 19:21:30.955 KST [69349] FATAL:  connection to client lost
+2026-11-04 19:21:30.994 KST [69357] LOG:  could not send data to client: Broken pipe
+2026-11-04 19:21:30.994 KST [69357] FATAL:  connection to client lost
+2026-11-04 19:21:32.557 KST [69273] LOG:  received fast shutdown request
+2026-11-04 19:21:32.562 KST [69273] LOG:  aborting any active transactions
+2026-11-04 19:21:32.565 KST [69273] LOG:  background worker "logical replication launcher" (PID 69280) exited with exit code 1
+2026-11-04 19:21:32.568 KST [69275] LOG:  shutting down
+2026-11-04 19:21:32.573 KST [69275] LOG:  checkpoint starting: shutdown immediate
+2026-11-04 19:21:32.617 KST [69275] LOG:  checkpoint complete: wrote 15 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.017 s, sync=0.007 s, total=0.049 s; sync files=15, longest=0.005 s, average=0.001 s; distance=68 kB, estimate=68 kB; lsn=1E/CDC20290, redo lsn=1E/CDC20290
+2026-11-04 19:21:33.772 KST [69273] LOG:  database system is shut down

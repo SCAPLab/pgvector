@@ -1,0 +1,19 @@
+2026-11-04 14:14:43.661 KST [49248] LOG:  starting PostgreSQL 17.11 (Ubuntu 17.11-1.pgdg24.04+2) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-11-04 14:14:43.666 KST [49248] LOG:  listening on Unix socket "/home/dccmercury/kcs2027/ivf-frag/run/.s.PGSQL.5433"
+2026-11-04 14:14:43.685 KST [49252] LOG:  database system was shut down at 2026-11-04 14:14:42 KST
+2026-11-04 14:14:43.698 KST [49248] LOG:  database system is ready to accept connections
+2026-11-04 14:14:43.808 KST [49250] LOG:  checkpoint starting: immediate force wait
+2026-11-04 14:14:43.865 KST [49250] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.030 s, sync=0.008 s, total=0.058 s; sync files=3, longest=0.005 s, average=0.003 s; distance=2 kB, estimate=2 kB; lsn=11/29127D10, redo lsn=11/29127CB8
+2026-11-04 14:14:43.898 KST [49250] LOG:  checkpoint starting: immediate force wait flush-all
+2026-11-04 14:14:43.942 KST [49250] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.018 s, sync=0.006 s, total=0.044 s; sync files=4, longest=0.005 s, average=0.002 s; distance=3 kB, estimate=3 kB; lsn=11/29128C20, redo lsn=11/29128BC8
+2026-11-04 14:15:07.517 KST [49250] LOG:  checkpoint starting: immediate force wait
+2026-11-04 14:15:07.544 KST [49250] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.012 s, sync=0.001 s, total=0.027 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=3 kB; lsn=11/29128D58, redo lsn=11/29128D00
+2026-11-04 14:15:07.561 KST [49250] LOG:  checkpoint starting: immediate force wait
+2026-11-04 14:15:07.602 KST [49250] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.016 s, sync=0.006 s, total=0.042 s; sync files=2, longest=0.004 s, average=0.003 s; distance=0 kB, estimate=3 kB; lsn=11/29128E70, redo lsn=11/29128E18
+2026-11-04 14:32:47.378 KST [49248] LOG:  received fast shutdown request
+2026-11-04 14:32:47.388 KST [49248] LOG:  aborting any active transactions
+2026-11-04 14:32:47.390 KST [49248] LOG:  background worker "logical replication launcher" (PID 49255) exited with exit code 1
+2026-11-04 14:32:47.757 KST [49250] LOG:  shutting down
+2026-11-04 14:32:47.767 KST [49250] LOG:  checkpoint starting: shutdown immediate
+2026-11-04 14:32:57.871 KST [49250] LOG:  checkpoint complete: wrote 424503 buffers (40.5%); 0 WAL file(s) added, 0 removed, 291 recycled; write=8.776 s, sync=0.011 s, total=10.114 s; sync files=19, longest=0.005 s, average=0.001 s; distance=4768665 kB, estimate=4768665 kB; lsn=12/4C20F250, redo lsn=12/4C20F250
+2026-11-04 14:32:59.642 KST [49248] LOG:  database system is shut down

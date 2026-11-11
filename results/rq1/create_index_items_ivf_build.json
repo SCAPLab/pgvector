@@ -1,0 +1,4 @@
+{"table": "items", "index": "items_ivf", "tag": "build", "rows": 6000000, "lists": 2450,
+ "seconds": 470.993753561, "index_bytes": 3287375872,
+ "max_parallel_maintenance_workers": 0, "maintenance_work_mem": "4GB",
+ "finished": "2026-11-03 19:58:52"}

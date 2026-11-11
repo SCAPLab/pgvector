@@ -1,0 +1,176 @@
+{
+ "name": "mem_L60_W2_r1",
+ "mem": "mem",
+ "load_pct": 60,
+ "workers": 2,
+ "target_qps": 30.91,
+ "rebuild_seconds": 450.5442271232605,
+ "wal_written_gib": 4.531067665666342,
+ "new_index_gib": 4.5877532958984375,
+ "recall_after": 0.98206,
+ "pgbench_ended_early": false,
+ "parallel_workers_seen": 2,
+ "parallel_workers_max_concurrent": 2,
+ "max_extra_disk_gib": 9.15484619140625,
+ "rebuild_phases_s": {
+  "building index: performing k-means": 141.0,
+  "building index: assigning tuples": 237.1,
+  "building index: loading tuples": 49.7,
+  "index validation: scanning index": 7.8,
+  "index validation: sorting tuples": 1.0,
+  "index validation: scanning table": 12.4,
+  "waiting for old snapshots": 0.0,
+  "waiting for readers before marking dead": 0.1,
+  "waiting for readers before dropping": 0.5
+ },
+ "phases": {
+  "baseline": {
+   "queries": 7505,
+   "seconds": 240.0042953491211,
+   "arrival_qps": 31.270273680239296,
+   "lat_ms_mean": 120.76553937375085,
+   "lat_ms_p50": 106.441,
+   "lat_ms_p95": 220.65999999999994,
+   "lat_ms_p99": 286.03788,
+   "lat_ms_max": 497.979,
+   "lag_ms_mean": 5.064326049300466,
+   "p99_of_1s_p99": 232.47370499999994,
+   "wait_query": {
+    "by_type": {
+     "CPU": 0.9568,
+     "IO": 0.0432
+    },
+    "top_events": {
+     "CPU:-": 0.9568,
+     "IO:BuffileWrite": 0.0318,
+     "IO:BuffileRead": 0.0059,
+     "IO:DataFileRead": 0.0055
+    },
+    "samples": 8674
+   },
+   "system": {
+    "r_iops": 171.20406098199734,
+    "r_mbps": 1.3379060590878535,
+    "r_await_ms": 0.094425,
+    "w_iops": 1.2998838082672417,
+    "w_mbps": 0.022863390198940205,
+    "w_await_ms": 0.5100708333333333,
+    "util": 0.01676333333333334,
+    "cpu_busy": 0.11434583333333333,
+    "cpu_iowait": 0.00045249999999999994
+   }
+  },
+  "rebuild": {
+   "queries": 14016,
+   "seconds": 450.5442271232605,
+   "arrival_qps": 31.109043588223546,
+   "lat_ms_mean": 193.77583418949774,
+   "lat_ms_p50": 137.617,
+   "lat_ms_p95": 449.36899999999997,
+   "lat_ms_p99": 1132.6291000000008,
+   "lat_ms_max": 3268.003,
+   "lag_ms_mean": 31.43649593321918,
+   "p99_of_1s_p99": 298.53775,
+   "wait_query": {
+    "by_type": {
+     "CPU": 0.8675,
+     "IO": 0.1321,
+     "IPC": 0.0003,
+     "Client": 0.0001,
+     "Timeout": 0.0
+    },
+    "top_events": {
+     "CPU:-": 0.8675,
+     "IO:DataFileRead": 0.0973,
+     "IO:BuffileWrite": 0.029,
+     "IO:BuffileRead": 0.0054,
+     "IO:DataFileWrite": 0.0005,
+     "IPC:BufferIo": 0.0003
+    },
+    "samples": 22687
+   },
+   "wait_rebuild_leader": {
+    "by_type": {
+     "CPU": 0.8972,
+     "IO": 0.0956,
+     "LWLock": 0.006,
+     "Lock": 0.0007,
+     "IPC": 0.0005
+    },
+    "top_events": {
+     "CPU:-": 0.8972,
+     "IO:DataFileRead": 0.0484,
+     "IO:DataFileExtend": 0.0238,
+     "IO:BuffileWrite": 0.0092,
+     "IO:BuffileRead": 0.007,
+     "LWLock:WALWrite": 0.0058
+    },
+    "samples": 9170
+   },
+   "wait_rebuild_workers": {
+    "by_type": {
+     "CPU": 0.9621,
+     "IO": 0.0379
+    },
+    "top_events": {
+     "CPU:-": 0.9621,
+     "IO:DataFileRead": 0.0206,
+     "IO:BuffileWrite": 0.0122,
+     "IO:BuffileRead": 0.0051
+    },
+    "samples": 4665
+   },
+   "system": {
+    "r_iops": 4806.193497676175,
+    "r_mbps": 52.20492511144252,
+    "r_await_ms": 0.21032594235033258,
+    "w_iops": 1970.4697970465181,
+    "w_mbps": 44.80389363845939,
+    "w_await_ms": 1.2554456762749446,
+    "util": 0.1933308203991131,
+    "cpu_busy": 0.2061126385809313,
+    "cpu_iowait": 0.016812638580931263
+   }
+  },
+  "after": {
+   "queries": 9255,
+   "seconds": 300,
+   "arrival_qps": 30.85,
+   "lat_ms_mean": 1343.6078393300918,
+   "lat_ms_p50": 157.754,
+   "lat_ms_p95": 7536.6287999999995,
+   "lat_ms_p99": 11184.562759999999,
+   "lat_ms_max": 12451.087,
+   "lag_ms_mean": 1105.5996615883305,
+   "p99_of_1s_p99": 340.15778,
+   "wait_query": {
+    "by_type": {
+     "IO": 0.5104,
+     "CPU": 0.4877,
+     "IPC": 0.0019,
+     "LWLock": 0.0
+    },
+    "top_events": {
+     "IO:DataFileRead": 0.4895,
+     "CPU:-": 0.4877,
+     "IO:BuffileWrite": 0.0183,
+     "IO:BuffileRead": 0.0026,
+     "IPC:BufferIo": 0.0019,
+     "LWLock:BufferMapping": 0.0
+    },
+    "samples": 22066
+   },
+   "system": {
+    "r_iops": 33952.744265035726,
+    "r_mbps": 265.2564138285218,
+    "r_await_ms": 0.09809,
+    "w_iops": 18.899874119295433,
+    "w_mbps": 0.16543918001675054,
+    "w_await_ms": 0.48025666666666667,
+    "util": 0.4742773333333334,
+    "cpu_busy": 0.12897833333333333,
+    "cpu_iowait": 0.09907466666666666
+   }
+  }
+ }
+}

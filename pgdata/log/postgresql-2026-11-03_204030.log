@@ -1,0 +1,15 @@
+2026-11-03 20:40:30.198 KST [17283] LOG:  starting PostgreSQL 17.11 (Ubuntu 17.11-1.pgdg24.04+2) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-11-03 20:40:30.203 KST [17283] LOG:  listening on Unix socket "/home/dccmercury/kcs2027/ivf-frag/run/.s.PGSQL.5433"
+2026-11-03 20:40:30.219 KST [17287] LOG:  database system was shut down at 2026-11-03 20:40:29 KST
+2026-11-03 20:40:30.229 KST [17283] LOG:  database system is ready to accept connections
+2026-11-03 20:42:50.197 KST [17285] LOG:  checkpoint starting: immediate force wait
+2026-11-03 20:42:51.000 KST [17285] LOG:  checkpoint complete: wrote 13903 buffers (84.9%); 0 WAL file(s) added, 51 removed, 38 recycled; write=0.317 s, sync=0.017 s, total=0.803 s; sync files=16, longest=0.008 s, average=0.002 s; distance=1455292 kB, estimate=1455292 kB; lsn=4/5D755290, redo lsn=4/5D755238
+2026-11-03 20:42:51.983 KST [17285] LOG:  checkpoint starting: immediate force wait
+2026-11-03 20:42:52.006 KST [17285] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.004 s, total=0.024 s; sync files=1, longest=0.004 s, average=0.004 s; distance=6 kB, estimate=1309764 kB; lsn=4/5D756B88, redo lsn=4/5D756B30
+2026-11-03 20:43:07.121 KST [17283] LOG:  received fast shutdown request
+2026-11-03 20:43:07.125 KST [17283] LOG:  aborting any active transactions
+2026-11-03 20:43:07.127 KST [17283] LOG:  background worker "logical replication launcher" (PID 17290) exited with exit code 1
+2026-11-03 20:43:07.133 KST [17285] LOG:  shutting down
+2026-11-03 20:43:07.138 KST [17285] LOG:  checkpoint starting: shutdown immediate
+2026-11-03 20:43:07.157 KST [17285] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.025 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=1178787 kB; lsn=4/5D756C38, redo lsn=4/5D756C38
+2026-11-03 20:43:07.195 KST [17283] LOG:  database system is shut down

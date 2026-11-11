@@ -1,0 +1,232 @@
+[2026-11-03 19:47:59] 정답 계산 종료 대기
+[2026-11-03 19:51:00] 정답 계산 완료, 인덱스 생성 시작
+CREATE INDEX
+{"table": "items", "index": "items_ivf", "tag": "build", "rows": 6000000, "lists": 2450,
+ "seconds": 470.993753561, "index_bytes": 3287375872,
+ "max_parallel_maintenance_workers": 0, "maintenance_work_mem": "4GB",
+ "finished": "2026-11-03 19:58:52"}
+[2026-11-03 19:58:52] ===== 측정 items_0
+[2026-11-03 19:58:56] items_ivf: base/16384/17078, 401291 blocks, 4 segments
+[2026-11-03 19:59:00] 읽기 4.1s
+[2026-11-03 19:59:00] lists 2450, tuples 6000000, pages/list mean 163.7, block_runs mean 1.00 max 1, lba_runs mean 1.01, orphans 0, tuples/page mode 15
+sanity OK: tuples 6000000 rows 6000000 orphans 0 block_runs max 1.0 (contiguous=True)
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 19:59 17078
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 19:59 17078.1
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 19:59 17078.2
+-rw-rw-r-- 1 dccmercury dccmercury   66150400 Nov  3 19:59 17078.3
+waiting for server to shut down.... done
+server stopped
+waiting for server to start.... done
+server started
+[2026-11-03 20:08:19] recall@10 = 0.9791 (tie-aware 0.9792), p50 49.4ms
+waiting for server to shut down.... done
+server stopped
+waiting for server to start.... done
+server started
+[2026-11-03 20:08:20] ===== 삽입 -> 10%
+[2026-11-03 20:08:20] pool[0:600000] 삽입 -> 10%
+[2026-11-03 20:08:26]   50000/600000 rows (9,036 rows/s)
+[2026-11-03 20:08:31]   100000/600000 rows (9,265 rows/s)
+[2026-11-03 20:08:36]   150000/600000 rows (9,367 rows/s)
+[2026-11-03 20:08:42]   200000/600000 rows (9,349 rows/s)
+[2026-11-03 20:08:47]   250000/600000 rows (9,414 rows/s)
+[2026-11-03 20:08:52]   300000/600000 rows (9,447 rows/s)
+[2026-11-03 20:08:57]   350000/600000 rows (9,457 rows/s)
+[2026-11-03 20:09:03]   400000/600000 rows (9,465 rows/s)
+[2026-11-03 20:09:08]   450000/600000 rows (9,489 rows/s)
+[2026-11-03 20:09:13]   500000/600000 rows (9,507 rows/s)
+[2026-11-03 20:09:18]   550000/600000 rows (9,521 rows/s)
+[2026-11-03 20:09:23]   600000/600000 rows (9,532 rows/s)
+[2026-11-03 20:09:23] 완료 63s
+[2026-11-03 20:09:23] ===== 측정 items_10
+[2026-11-03 20:09:33] items_ivf: base/16384/17078, 441304 blocks, 4 segments
+[2026-11-03 20:09:37] 읽기 4.4s
+[2026-11-03 20:09:38] lists 2450, tuples 6600000, pages/list mean 180.1, block_runs mean 17.33 max 117, lba_runs mean 17.34, orphans 0, tuples/page mode 15
+sanity OK: tuples 6600000 rows 6600000 orphans 0 block_runs max 117.0 (contiguous=False)
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 20:09 17078
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 20:09 17078.1
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 20:09 17078.2
+-rw-rw-r-- 1 dccmercury dccmercury  393936896 Nov  3 20:09 17078.3
+waiting for server to shut down.... done
+server stopped
+waiting for server to start.... done
+server started
+[2026-11-03 20:19:50] recall@10 = 0.9794 (tie-aware 0.9795), p50 54.2ms
+waiting for server to shut down..... done
+server stopped
+waiting for server to start.... done
+server started
+[2026-11-03 20:19:51] ===== REINDEX 대조군 items_r10
+NOTICE:  table "items_r10" does not exist, skipping
+DROP TABLE
+SELECT 6600000
+CREATE INDEX
+{"table": "items_r10", "index": "items_r10_ivf", "tag": "reindex_10", "rows": 6600000, "lists": 2450,
+ "seconds": 511.756251585, "index_bytes": 3615195136,
+ "max_parallel_maintenance_workers": 0, "maintenance_work_mem": "4GB",
+ "finished": "2026-11-03 20:30:11"}
+[2026-11-03 20:30:11] ===== 측정 items_r10_10
+[2026-11-03 20:30:16] items_r10_ivf: base/16384/17087, 441308 blocks, 4 segments
+[2026-11-03 20:30:21] 읽기 4.4s
+[2026-11-03 20:30:21] lists 2450, tuples 6600000, pages/list mean 180.1, block_runs mean 1.00 max 1, lba_runs mean 1.01, orphans 0, tuples/page mode 15
+sanity OK: tuples 6600000 rows 6600000 orphans 0 block_runs max 1.0 (contiguous=True)
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 20:30 17087
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 20:30 17087.1
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 20:30 17087.2
+-rw-rw-r-- 1 dccmercury dccmercury  393969664 Nov  3 20:30 17087.3
+waiting for server to shut down.... done
+server stopped
+waiting for server to start.... done
+server started
+[2026-11-03 20:40:29] recall@10 = 0.9799 (tie-aware 0.9799), p50 54.0ms
+waiting for server to shut down..... done
+server stopped
+waiting for server to start.... done
+server started
+[2026-11-03 20:40:30] ===== 삽입 -> 30%
+[2026-11-03 20:40:30] pool[600000:1800000] 삽입 -> 30%
+[2026-11-03 20:40:36]   50000/1200000 rows (9,171 rows/s)
+[2026-11-03 20:40:41]   100000/1200000 rows (9,333 rows/s)
+[2026-11-03 20:40:46]   150000/1200000 rows (9,450 rows/s)
+[2026-11-03 20:40:51]   200000/1200000 rows (9,484 rows/s)
+[2026-11-03 20:40:56]   250000/1200000 rows (9,505 rows/s)
+[2026-11-03 20:41:02]   300000/1200000 rows (9,535 rows/s)
+[2026-11-03 20:41:07]   350000/1200000 rows (9,540 rows/s)
+[2026-11-03 20:41:12]   400000/1200000 rows (9,551 rows/s)
+[2026-11-03 20:41:17]   450000/1200000 rows (9,555 rows/s)
+[2026-11-03 20:41:22]   500000/1200000 rows (9,552 rows/s)
+[2026-11-03 20:41:28]   550000/1200000 rows (9,556 rows/s)
+[2026-11-03 20:41:33]   600000/1200000 rows (9,557 rows/s)
+[2026-11-03 20:41:38]   650000/1200000 rows (9,568 rows/s)
+[2026-11-03 20:41:43]   700000/1200000 rows (9,561 rows/s)
+[2026-11-03 20:41:49]   750000/1200000 rows (9,563 rows/s)
+[2026-11-03 20:41:54]   800000/1200000 rows (9,565 rows/s)
+[2026-11-03 20:41:59]   850000/1200000 rows (9,566 rows/s)
+[2026-11-03 20:42:04]   900000/1200000 rows (9,566 rows/s)
+[2026-11-03 20:42:09]   950000/1200000 rows (9,567 rows/s)
+[2026-11-03 20:42:15]   1000000/1200000 rows (9,569 rows/s)
+[2026-11-03 20:42:20]   1050000/1200000 rows (9,568 rows/s)
+[2026-11-03 20:42:25]   1100000/1200000 rows (9,568 rows/s)
+[2026-11-03 20:42:30]   1150000/1200000 rows (9,572 rows/s)
+[2026-11-03 20:42:35]   1200000/1200000 rows (9,574 rows/s)
+[2026-11-03 20:42:35] 완료 125s
+[2026-11-03 20:42:35] ===== 측정 items_30
+[2026-11-03 20:42:52] items_ivf: base/16384/17078, 521309 blocks, 4 segments
+[2026-11-03 20:42:57] 읽기 5.0s
+[2026-11-03 20:42:58] lists 2450, tuples 7800000, pages/list mean 212.7, block_runs mean 49.99 max 350, lba_runs mean 50.00, orphans 0, tuples/page mode 15
+sanity OK: tuples 7800000 rows 7800000 orphans 0 block_runs max 350.0 (contiguous=False)
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 20:43 17078
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 20:43 17078.1
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 20:43 17078.2
+-rw-rw-r-- 1 dccmercury dccmercury 1049337856 Nov  3 20:43 17078.3
+waiting for server to shut down.... done
+server stopped
+waiting for server to start.... done
+server started
+[2026-11-03 20:57:52] recall@10 = 0.9806 (tie-aware 0.9807), p50 77.5ms
+waiting for server to shut down..... done
+server stopped
+waiting for server to start.... done
+server started
+[2026-11-03 20:57:54] ===== REINDEX 대조군 items_r30
+NOTICE:  table "items_r30" does not exist, skipping
+DROP TABLE
+SELECT 7800000
+CREATE INDEX
+{"table": "items_r30", "index": "items_r30_ivf", "tag": "reindex_30", "rows": 7800000, "lists": 2450,
+ "seconds": 579.245263170, "index_bytes": 4270620672,
+ "max_parallel_maintenance_workers": 0, "maintenance_work_mem": "4GB",
+ "finished": "2026-11-03 21:09:35"}
+[2026-11-03 21:09:35] ===== 측정 items_r30_30
+[2026-11-03 21:09:41] items_r30_ivf: base/16384/17096, 521316 blocks, 4 segments
+[2026-11-03 21:09:46] 읽기 5.0s
+[2026-11-03 21:09:47] lists 2450, tuples 7800000, pages/list mean 212.7, block_runs mean 1.00 max 1, lba_runs mean 1.01, orphans 0, tuples/page mode 15
+sanity OK: tuples 7800000 rows 7800000 orphans 0 block_runs max 1.0 (contiguous=True)
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 21:09 17096
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 21:09 17096.1
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 21:09 17096.2
+-rw-rw-r-- 1 dccmercury dccmercury 1049395200 Nov  3 21:09 17096.3
+waiting for server to shut down.... done
+server stopped
+waiting for server to start.... done
+server started
+[2026-11-03 21:24:24] recall@10 = 0.9808 (tie-aware 0.9808), p50 76.4ms
+waiting for server to shut down..... done
+server stopped
+waiting for server to start.... done
+server started
+[2026-11-03 21:24:25] ===== 삽입 -> 50%
+[2026-11-03 21:24:25] pool[1800000:3000000] 삽입 -> 50%
+[2026-11-03 21:24:31]   50000/1200000 rows (8,780 rows/s)
+[2026-11-03 21:24:36]   100000/1200000 rows (9,039 rows/s)
+[2026-11-03 21:24:42]   150000/1200000 rows (9,172 rows/s)
+[2026-11-03 21:24:47]   200000/1200000 rows (9,197 rows/s)
+[2026-11-03 21:24:53]   250000/1200000 rows (9,222 rows/s)
+[2026-11-03 21:24:58]   300000/1200000 rows (9,232 rows/s)
+[2026-11-03 21:25:03]   350000/1200000 rows (9,246 rows/s)
+[2026-11-03 21:25:09]   400000/1200000 rows (9,257 rows/s)
+[2026-11-03 21:25:14]   450000/1200000 rows (9,277 rows/s)
+[2026-11-03 21:25:19]   500000/1200000 rows (9,286 rows/s)
+[2026-11-03 21:25:25]   550000/1200000 rows (9,293 rows/s)
+[2026-11-03 21:25:30]   600000/1200000 rows (9,292 rows/s)
+[2026-11-03 21:25:35]   650000/1200000 rows (9,295 rows/s)
+[2026-11-03 21:25:41]   700000/1200000 rows (9,300 rows/s)
+[2026-11-03 21:25:46]   750000/1200000 rows (9,311 rows/s)
+[2026-11-03 21:25:51]   800000/1200000 rows (9,318 rows/s)
+[2026-11-03 21:25:57]   850000/1200000 rows (9,317 rows/s)
+[2026-11-03 21:26:02]   900000/1200000 rows (9,317 rows/s)
+[2026-11-03 21:26:07]   950000/1200000 rows (9,320 rows/s)
+[2026-11-03 21:26:13]   1000000/1200000 rows (9,321 rows/s)
+[2026-11-03 21:26:18]   1050000/1200000 rows (9,324 rows/s)
+[2026-11-03 21:26:23]   1100000/1200000 rows (9,326 rows/s)
+[2026-11-03 21:26:29]   1150000/1200000 rows (9,329 rows/s)
+[2026-11-03 21:26:34]   1200000/1200000 rows (9,335 rows/s)
+[2026-11-03 21:26:34] 완료 129s
+[2026-11-03 21:26:34] ===== 측정 items_50
+[2026-11-03 21:26:51] items_ivf: base/16384/17078, 601315 blocks, 5 segments
+[2026-11-03 21:26:57] 읽기 6.0s
+[2026-11-03 21:26:58] lists 2450, tuples 9000000, pages/list mean 245.4, block_runs mean 82.64 max 577, lba_runs mean 82.65, orphans 0, tuples/page mode 15
+sanity OK: tuples 9000000 rows 9000000 orphans 0 block_runs max 577.0 (contiguous=False)
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 21:27 17078
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 21:27 17078.1
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 21:27 17078.2
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 21:27 17078.3
+-rw-rw-r-- 1 dccmercury dccmercury  631005184 Nov  3 21:27 17078.4
+waiting for server to shut down.... done
+server stopped
+waiting for server to start.... done
+server started
+[2026-11-03 21:43:38] recall@10 = 0.9812 (tie-aware 0.9813), p50 87.0ms
+waiting for server to shut down..... done
+server stopped
+waiting for server to start.... done
+server started
+[2026-11-03 21:43:40] ===== REINDEX 대조군 items_r50
+NOTICE:  table "items_r50" does not exist, skipping
+DROP TABLE
+SELECT 9000000
+CREATE INDEX
+{"table": "items_r50", "index": "items_r50_ivf", "tag": "reindex_50", "rows": 9000000, "lists": 2450,
+ "seconds": 649.528299197, "index_bytes": 4925808640,
+ "max_parallel_maintenance_workers": 0, "maintenance_work_mem": "4GB",
+ "finished": "2026-11-03 21:56:53"}
+[2026-11-03 21:56:53] ===== 측정 items_r50_50
+[2026-11-03 21:56:59] items_r50_ivf: base/16384/17105, 601295 blocks, 5 segments
+[2026-11-03 21:57:05] 읽기 5.8s
+[2026-11-03 21:57:05] lists 2450, tuples 9000000, pages/list mean 245.4, block_runs mean 1.00 max 1, lba_runs mean 1.01, orphans 0, tuples/page mode 15
+sanity OK: tuples 9000000 rows 9000000 orphans 0 block_runs max 1.0 (contiguous=True)
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 21:57 17105
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 21:57 17105.1
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 21:57 17105.2
+-rw-rw-r-- 1 dccmercury dccmercury 1073741824 Nov  3 21:57 17105.3
+-rw-rw-r-- 1 dccmercury dccmercury  630841344 Nov  3 21:57 17105.4
+waiting for server to shut down.... done
+server stopped
+waiting for server to start.... done
+server started
+[2026-11-03 22:13:25] recall@10 = 0.9817 (tie-aware 0.9818), p50 86.1ms
+waiting for server to shut down..... done
+server stopped
+waiting for server to start.... done
+server started
+[2026-11-03 22:13:27] 전체 완료

@@ -1,0 +1,23 @@
+// 프로세스 하나의 읽기 syscall 수·바이트 (문서 3.5절 cold 쿼리). 아직 실행 검증 전 초안.
+//   sudo ivf-root trace syscalls <pid> <초>
+// PG17은 단일 블록 읽기에 pread64, read stream 경로(pg_prewarm 등)에 preadv를 쓴다.
+
+tracepoint:syscalls:sys_enter_pread64 /pid == $1/
+{
+  @pread64 = count();
+  @pread64_bytes = sum(args.count);
+  @pread64_size_kb = hist(args.count / 1024);
+}
+
+tracepoint:syscalls:sys_enter_preadv /pid == $1/
+{
+  @preadv = count();
+}
+
+interval:s:1
+{
+  @elapsed = count();
+  if ((uint64)@elapsed >= $2) {
+    exit();
+  }
+}

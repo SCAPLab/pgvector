@@ -1,0 +1,37 @@
+{
+ "mem": "io",
+ "load_pct": 30,
+ "workers": 0,
+ "target_qps": 2.32,
+ "base_s": 300,
+ "after_s": 300,
+ "t_load_start": 1793781304.0963547,
+ "t_rebuild_start": 1793781604.1005073,
+ "t_rebuild_end": 1793782341.2295508,
+ "t_load_end": 1793782649.821058,
+ "rebuild_seconds": 737.1290435791016,
+ "pgbench_ended_early": false,
+ "pgbench": {
+  "transactions": 3164,
+  "failed": 0,
+  "tps": 2.351189,
+  "latency_avg_ms": 1227.466,
+  "lag_avg_ms": 37.418
+ },
+ "pre": {
+  "wal_bytes": 112312073759,
+  "wal_lsn": "1A/41868538",
+  "index_bytes": 4925972480,
+  "index_relfilenode": "17078",
+  "shared_buffers": "128MB"
+ },
+ "post": {
+  "wal_bytes": 117177268477,
+  "wal_lsn": "1B/6494E038",
+  "index_bytes": 4925923328,
+  "index_relfilenode": "17141",
+  "wal_diff_bytes": 4883110656
+ },
+ "recall_after": 0.9810200000000001,
+ "wal_written_bytes": 4865194718
+}

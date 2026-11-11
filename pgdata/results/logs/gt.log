@@ -1,0 +1,10 @@
+[2026-11-03 19:42:33] 10M 원래 순서에서 쿼리 1000개 top-10
+[2026-11-03 19:43:47] 검증 결과: {'gnd_file': '/home/dccmercury/kcs2027/ivf-frag/data/raw/gnd/gnd/idx_10M.ivecs', 'n_queries': 1000, 'queries_all_10_distances_equal': 1000, 'frac_distances_equal': 1.0, 'mean_id_overlap': 1.0, 'n_queries_id_mismatch': 0, 'provided_gnd_sorted_by_distance': True, 'examples_mismatch': []}
+[2026-11-03 19:43:48] build 6000000개 top-10
+[2026-11-03 19:48:35] 삽입 묶음 pool[0:600000] top-10 -> 10%
+[2026-11-03 19:49:02]   10%: 정답 중 삽입 벡터 비율 0.089
+[2026-11-03 19:49:02] 삽입 묶음 pool[600000:1800000] top-10 -> 30%
+[2026-11-03 19:49:54]   30%: 정답 중 삽입 벡터 비율 0.229
+[2026-11-03 19:49:54] 삽입 묶음 pool[1800000:3000000] top-10 -> 50%
+[2026-11-03 19:50:45]   50%: 정답 중 삽입 벡터 비율 0.332
+[2026-11-03 19:50:45] 완료

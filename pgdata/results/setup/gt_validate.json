@@ -1,0 +1,10 @@
+{
+  "gnd_file": "/home/dccmercury/kcs2027/ivf-frag/data/raw/gnd/gnd/idx_10M.ivecs",
+  "n_queries": 1000,
+  "queries_all_10_distances_equal": 1000,
+  "frac_distances_equal": 1.0,
+  "mean_id_overlap": 1.0,
+  "n_queries_id_mismatch": 0,
+  "provided_gnd_sorted_by_distance": true,
+  "examples_mismatch": []
+}

@@ -1,0 +1,9 @@
+{
+  "database": "rq3",
+  "stage": 50,
+  "probes": 50,
+  "n_queries": 10000,
+  "recall_at_10": 0.98131,
+  "recall_at_10_tie_aware": 0.9813200000000001,
+  "plan": "Limit  (cost=32064.37..32089.67 rows=10 width=16)\n  InitPlan 1\n    ->  Index Scan using queries_pkey on queries  (cost=0.29..8.30 rows=1 width=520)\n          Index Cond: (id = 1)\n  ->  Index Scan using items_ivf on items  (cost=32056.07..22802323.50 rows=9000000 width=16)\n        Order By: (embedding <-> (InitPlan 1).col1)"
+}

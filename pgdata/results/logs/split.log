@@ -1,0 +1,3 @@
+[2026-11-03 19:42:09] base 읽기 /home/dccmercury/kcs2027/ivf-frag/data/raw/sift10m.bvecs (1320000000 bytes)
+[2026-11-03 19:42:10] 섞기·분할
+[2026-11-03 19:42:11] 완료 {'seed': 42, 'n_base': 10000000, 'n_build': 6000000, 'n_pool': 4000000, 'base_file': '/home/dccmercury/kcs2027/ivf-frag/data/raw/sift10m.bvecs', 'base_bytes': 1320000000, 'first_vec_head': [0, 0, 0, 1, 8, 7, 3, 2], 'perm_head': [2531646, 753717, 2857947, 7742707, 4547078], 'mean_L1_adjacent_original': 3743.98504, 'mean_L1_adjacent_shuffled': 4015.91364}

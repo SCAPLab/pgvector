@@ -1,0 +1,12 @@
+{
+  "stage": 50,
+  "table": "items",
+  "probes": 50,
+  "n_queries": 10000,
+  "recall_at_10": 0.9812200000000001,
+  "recall_at_10_tie_aware": 0.9812700000000001,
+  "latency_ms_p50": 86.97926799504785,
+  "latency_ms_p99": 214.26860382765884,
+  "shared_buffers": "8GB",
+  "plan": "Limit  (cost=32065.23..32090.54 rows=10 width=16)\n  InitPlan 1\n    ->  Index Scan using queries_pkey on queries  (cost=0.29..8.30 rows=1 width=520)\n          Index Cond: (id = 1)\n  ->  Index Scan using items_ivf on items  (cost=32056.93..22803205.34 rows=9000292 width=16)\n        Order By: (embedding <-> (InitPlan 1).col1)"
+}

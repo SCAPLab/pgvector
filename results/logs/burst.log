@@ -1,0 +1,459 @@
+[2026-11-04 21:01:55] ===== 기준 DB burst_base
+NOTICE:  database "burst_base" does not exist, skipping
+[2026-11-04 21:01:55] build 6000000개 COPY -> burst_base
+[2026-11-04 21:01:58]   200000/6000000 rows (63,447 rows/s)
+[2026-11-04 21:02:02]   400000/6000000 rows (61,214 rows/s)
+[2026-11-04 21:02:05]   600000/6000000 rows (60,369 rows/s)
+[2026-11-04 21:02:09]   800000/6000000 rows (59,344 rows/s)
+[2026-11-04 21:02:12]   1000000/6000000 rows (58,327 rows/s)
+[2026-11-04 21:02:16]   1200000/6000000 rows (57,032 rows/s)
+[2026-11-04 21:02:20]   1400000/6000000 rows (56,992 rows/s)
+[2026-11-04 21:02:23]   1600000/6000000 rows (56,672 rows/s)
+[2026-11-04 21:02:27]   1800000/6000000 rows (56,787 rows/s)
+[2026-11-04 21:02:31]   2000000/6000000 rows (56,186 rows/s)
+[2026-11-04 21:02:35]   2200000/6000000 rows (55,689 rows/s)
+[2026-11-04 21:02:38]   2400000/6000000 rows (55,910 rows/s)
+[2026-11-04 21:02:42]   2600000/6000000 rows (55,804 rows/s)
+[2026-11-04 21:02:46]   2800000/6000000 rows (55,656 rows/s)
+[2026-11-04 21:02:49]   3000000/6000000 rows (55,825 rows/s)
+[2026-11-04 21:02:53]   3200000/6000000 rows (55,852 rows/s)
+[2026-11-04 21:02:56]   3400000/6000000 rows (55,659 rows/s)
+[2026-11-04 21:03:00]   3600000/6000000 rows (55,632 rows/s)
+[2026-11-04 21:03:03]   3800000/6000000 rows (55,656 rows/s)
+[2026-11-04 21:03:07]   4000000/6000000 rows (55,865 rows/s)
+[2026-11-04 21:03:11]   4200000/6000000 rows (55,738 rows/s)
+[2026-11-04 21:03:14]   4400000/6000000 rows (55,877 rows/s)
+[2026-11-04 21:03:18]   4600000/6000000 rows (55,808 rows/s)
+[2026-11-04 21:03:21]   4800000/6000000 rows (55,759 rows/s)
+[2026-11-04 21:03:25]   5000000/6000000 rows (55,704 rows/s)
+[2026-11-04 21:03:29]   5200000/6000000 rows (55,589 rows/s)
+[2026-11-04 21:03:33]   5400000/6000000 rows (55,486 rows/s)
+[2026-11-04 21:03:36]   5600000/6000000 rows (55,434 rows/s)
+[2026-11-04 21:03:40]   5800000/6000000 rows (55,587 rows/s)
+[2026-11-04 21:03:44]   6000000/6000000 rows (55,356 rows/s)
+[2026-11-04 21:03:44] 적재 완료 108s
+CREATE INDEX
+[2026-11-04 21:12:25] 인덱스 생성 {"seconds": 454.029116220, "index_bytes": 3287433216, "finished": "2026-11-04 21:12:25"}
+[2026-11-04 21:12:28] items_ivf: base/17150/17487, 401298 blocks, 4 segments
+[2026-11-04 21:12:32] 읽기 4.1s
+[2026-11-04 21:12:33] lists 2450, tuples 6000000, pages/list mean 163.7, block_runs mean 1.00 max 1, lba_runs mean 1.01, orphans 0, tuples/page mode 15
+[2026-11-04 21:12:40] 복사본 burst_base: 3.1G
+[2026-11-04 21:12:40] ===== 계획
+[2026-11-04 21:12:40] centroid 2450개 읽음
+[2026-11-04 21:12:42]   배정 50,000/4,000,000 (2s)
+[2026-11-04 21:13:16]   배정 1,050,000/4,000,000 (35s)
+[2026-11-04 21:13:49]   배정 2,050,000/4,000,000 (69s)
+[2026-11-04 21:14:22]   배정 3,050,000/4,000,000 (102s)
+[2026-11-04 21:14:54] 배정 완료: 동점 근처로 제외 919개 (0.02297%)
+[2026-11-04 21:14:57] 예측 s1 (모음): hot block_runs 2.0, 간격 중앙값 1페이지, 1MB 요청 3.7
+[2026-11-04 21:14:57] 예측 s16 (16개씩 섞음): hot block_runs 72.9, 간격 중앙값 16페이지, 1MB 요청 11.9
+[2026-11-04 21:14:58] 예측 s512 (섞음): hot block_runs 72.9, 간격 중앙값 502페이지, 1MB 요청 74.0
+[2026-11-04 21:14:58] 계획 저장: hot 512개 (크기 1956~2354), 삽입 552,013개, 재생 대상 list 640개
+[2026-11-04 21:14:58] ===== 시나리오 s1
+NOTICE:  database "burst_s1" does not exist, skipping
+[2026-11-04 21:15:15] s1 (모음): 552,013개 삽입 -> burst_s1
+[2026-11-04 21:16:32] 완료 78s (7,123 rows/s), 테이블 6,552,013행
+[2026-11-04 21:16:39] items_ivf: base/17489/17487, 438095 blocks, 4 segments
+[2026-11-04 21:16:43] 읽기 4.4s
+[2026-11-04 21:16:44] lists 2450, tuples 6552013, pages/list mean 178.7, block_runs mean 1.21 max 2, lba_runs mean 1.22, orphans 0, tuples/page mode 15
+[2026-11-04 21:16:51] 복사본 burst_s1: 3.4G
+Traceback (most recent call last):
+  File "/home/dccmercury/kcs2027/ivf-frag/.venv/lib/python3.12/site-packages/pandas/core/internals/blocks.py", line 1179, in setitem
+    casted = np_can_hold_element(values.dtype, value)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dccmercury/kcs2027/ivf-frag/.venv/lib/python3.12/site-packages/pandas/core/dtypes/cast.py", line 1805, in np_can_hold_element
+    raise LossySetitemError
+pandas.errors.LossySetitemError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dccmercury/kcs2027/ivf-frag/burst/burst.py", line 282, in <module>
+    main()
+  File "/home/dccmercury/kcs2027/ivf-frag/burst/burst.py", line 278, in main
+    {"load-base": cmd_load_base, "plan": cmd_plan, "insert": cmd_insert, "check": cmd_check}[a.cmd](a)
+  File "/home/dccmercury/kcs2027/ivf-frag/burst/burst.py", line 247, in cmd_check
+    plan_ins.loc[hot.index] = hot.insert
+    ~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/dccmercury/kcs2027/ivf-frag/.venv/lib/python3.12/site-packages/pandas/core/indexing.py", line 1010, in __setitem__
+    iloc._setitem_with_indexer(indexer, value, self.name)
+  File "/home/dccmercury/kcs2027/ivf-frag/.venv/lib/python3.12/site-packages/pandas/core/indexing.py", line 2653, in _setitem_with_indexer
+    self._setitem_single_block(indexer, value, name)
+  File "/home/dccmercury/kcs2027/ivf-frag/.venv/lib/python3.12/site-packages/pandas/core/indexing.py", line 2985, in _setitem_single_block
+    self.obj._mgr = self.obj._mgr.setitem(indexer=indexer, value=value)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dccmercury/kcs2027/ivf-frag/.venv/lib/python3.12/site-packages/pandas/core/internals/managers.py", line 625, in setitem
+    return self.apply("setitem", indexer=indexer, value=value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dccmercury/kcs2027/ivf-frag/.venv/lib/python3.12/site-packages/pandas/core/internals/managers.py", line 456, in apply
+    applied = getattr(b, f)(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dccmercury/kcs2027/ivf-frag/.venv/lib/python3.12/site-packages/pandas/core/internals/blocks.py", line 1182, in setitem
+    nb = self.coerce_to_target_dtype(value, raise_on_upcast=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dccmercury/kcs2027/ivf-frag/.venv/lib/python3.12/site-packages/pandas/core/internals/blocks.py", line 484, in coerce_to_target_dtype
+    raise TypeError(f"Invalid value '{other}' for dtype '{self.values.dtype}'")
+TypeError: Invalid value '<bound method DataFrame.insert of          build_size  insert  group
+list_id                           
+944            2155    1078     25
+1941           2155    1078     10
+347            2156    1078     13
+1189           2154    1077     20
+805            2157    1078      9
+...             ...     ...    ...
+154            2353    1176     30
+220            2353    1176      6
+458            2353    1176      1
+121            2354    1177      2
+551            1956     978     25
+
+[512 rows x 3 columns]>' for dtype 'int64'
+[2026-11-04 21:17:19] ===== 시나리오 s16
+NOTICE:  database "burst_s16" does not exist, skipping
+[2026-11-04 21:17:24] s16 (16개씩 섞음): 552,013개 삽입 -> burst_s16
+[2026-11-04 21:18:42] 완료 79s (7,028 rows/s), 테이블 6,552,013행
+[2026-11-04 21:18:49] items_ivf: base/17491/17487, 438095 blocks, 4 segments
+[2026-11-04 21:18:55] 읽기 5.6s
+[2026-11-04 21:18:55] lists 2450, tuples 6552013, pages/list mean 178.7, block_runs mean 16.02 max 80, lba_runs mean 16.03, orphans 0, tuples/page mode 15
+[2026-11-04 21:19:03] 복사본 burst_s16: 3.4G
+[2026-11-04 21:19:04] 대조 s16: {'scenario': 's16', 'lists_tuple_count_mismatch': 0, 'cold_lists_changed': 0, 'replay_lists_block_runs_mismatch': 0, 'hot_block_runs_mean': 72.869140625, 'hot_block_runs_pred_mean': 72.869140625, 'hot_lba_runs_mean': 72.875, 'all_chains_ascending': True}
+[2026-11-04 21:19:04] ===== 시나리오 s512
+NOTICE:  database "burst_s512" does not exist, skipping
+[2026-11-04 21:19:08] s512 (섞음): 552,013개 삽입 -> burst_s512
+[2026-11-04 21:20:28] 완료 80s (6,894 rows/s), 테이블 6,552,013행
+[2026-11-04 21:20:35] items_ivf: base/17493/17487, 438095 blocks, 4 segments
+[2026-11-04 21:20:41] 읽기 6.0s
+[2026-11-04 21:20:41] lists 2450, tuples 6552013, pages/list mean 178.7, block_runs mean 16.02 max 80, lba_runs mean 16.03, orphans 0, tuples/page mode 15
+[2026-11-04 21:20:49] 복사본 burst_s512: 3.4G
+[2026-11-04 21:20:49] 대조 s512: {'scenario': 's512', 'lists_tuple_count_mismatch': 0, 'cold_lists_changed': 0, 'replay_lists_block_runs_mismatch': 0, 'hot_block_runs_mean': 72.869140625, 'hot_block_runs_pred_mean': 72.869140625, 'hot_lba_runs_mean': 72.873046875, 'all_chains_ascending': True}
+[2026-11-04 21:20:49] ===== 재생 (ROUNDS=2)
+governor=performance
+Warning: The unit file, source configuration file or drop-ins of apt-daily.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped apt-daily.timer
+Warning: The unit file, source configuration file or drop-ins of apt-daily-upgrade.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped apt-daily-upgrade.timer
+Warning: The unit file, source configuration file or drop-ins of anacron.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped anacron.timer
+Warning: The unit file, source configuration file or drop-ins of fstrim.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped fstrim.timer
+Warning: The unit file, source configuration file or drop-ins of e2scrub_all.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped e2scrub_all.timer
+Warning: The unit file, source configuration file or drop-ins of fwupd-refresh.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped fwupd-refresh.timer
+Warning: The unit file, source configuration file or drop-ins of man-db.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped man-db.timer
+Warning: The unit file, source configuration file or drop-ins of logrotate.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped logrotate.timer
+Warning: The unit file, source configuration file or drop-ins of dpkg-db-backup.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped dpkg-db-backup.timer
+Warning: The unit file, source configuration file or drop-ins of sysstat-collect.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped sysstat-collect.timer
+Warning: The unit file, source configuration file or drop-ins of sysstat-summary.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped sysstat-summary.timer
+Warning: The unit file, source configuration file or drop-ins of update-notifier-download.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped update-notifier-download.timer
+Warning: The unit file, source configuration file or drop-ins of motd-news.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped motd-news.timer
+Warning: The unit file, source configuration file or drop-ins of snapd.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+Stopping 'snapd.service', but its triggering units are still active:
+snapd.socket
+stopped snapd.service
+Warning: The unit file, source configuration file or drop-ins of snapd.socket changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped snapd.socket
+waiting for server to shut down.... done
+server stopped
+[2026-11-04 21:20:53] ===== 회차 1
+[2026-11-04 21:20:53] burst_base_r1  B 순서 256,8,1024,4,128,16,64,32,512
+Traceback (most recent call last):
+  File "/home/dccmercury/kcs2027/ivf-frag/replay/run_replay.py", line 175, in <module>
+    main()
+  File "/home/dccmercury/kcs2027/ivf-frag/replay/run_replay.py", line 98, in main
+    df = pd.read_csv(a.layout or RESULTS / "rq1" / f"layout_{a.tag}.csv")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dccmercury/kcs2027/ivf-frag/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1866, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dccmercury/kcs2027/ivf-frag/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 423, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dccmercury/kcs2027/ivf-frag/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 2721, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dccmercury/kcs2027/ivf-frag/.venv/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 2988, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/dccmercury/kcs2027/ivf-frag/.venv/lib/python3.12/site-packages/pandas/io/common.py", line 948, in get_handle
+    handle = open(handle, ioargs.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/dccmercury/kcs2027/ivf-frag/results/burst/replay/layout_burst_base.csv'
+[2026-11-04 21:20:54] 정리: quiet off, perf off, PostgreSQL 재시작
+Warning: The unit file, source configuration file or drop-ins of apt-daily.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started apt-daily.timer
+Warning: The unit file, source configuration file or drop-ins of apt-daily-upgrade.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started apt-daily-upgrade.timer
+Warning: The unit file, source configuration file or drop-ins of anacron.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started anacron.timer
+Warning: The unit file, source configuration file or drop-ins of fstrim.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started fstrim.timer
+Warning: The unit file, source configuration file or drop-ins of e2scrub_all.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started e2scrub_all.timer
+Warning: The unit file, source configuration file or drop-ins of fwupd-refresh.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started fwupd-refresh.timer
+Warning: The unit file, source configuration file or drop-ins of man-db.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started man-db.timer
+Warning: The unit file, source configuration file or drop-ins of logrotate.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started logrotate.timer
+Warning: The unit file, source configuration file or drop-ins of dpkg-db-backup.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started dpkg-db-backup.timer
+Warning: The unit file, source configuration file or drop-ins of sysstat-collect.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started sysstat-collect.timer
+Warning: The unit file, source configuration file or drop-ins of sysstat-summary.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started sysstat-summary.timer
+Warning: The unit file, source configuration file or drop-ins of update-notifier-download.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started update-notifier-download.timer
+Warning: The unit file, source configuration file or drop-ins of motd-news.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started motd-news.timer
+Warning: The unit file, source configuration file or drop-ins of snapd.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+started snapd.service
+Warning: The unit file, source configuration file or drop-ins of snapd.socket changed on disk. Run 'systemctl daemon-reload' to reload units.
+started snapd.socket
+governor=schedutil
+[2026-11-04 21:21:17] ===== 재생 (ROUNDS=2)
+governor=performance
+Warning: The unit file, source configuration file or drop-ins of apt-daily.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped apt-daily.timer
+Warning: The unit file, source configuration file or drop-ins of apt-daily-upgrade.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped apt-daily-upgrade.timer
+Warning: The unit file, source configuration file or drop-ins of anacron.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped anacron.timer
+Warning: The unit file, source configuration file or drop-ins of fstrim.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped fstrim.timer
+Warning: The unit file, source configuration file or drop-ins of e2scrub_all.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped e2scrub_all.timer
+Warning: The unit file, source configuration file or drop-ins of fwupd-refresh.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped fwupd-refresh.timer
+Warning: The unit file, source configuration file or drop-ins of man-db.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped man-db.timer
+Warning: The unit file, source configuration file or drop-ins of logrotate.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped logrotate.timer
+Warning: The unit file, source configuration file or drop-ins of dpkg-db-backup.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped dpkg-db-backup.timer
+Warning: The unit file, source configuration file or drop-ins of sysstat-collect.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped sysstat-collect.timer
+Warning: The unit file, source configuration file or drop-ins of sysstat-summary.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped sysstat-summary.timer
+Warning: The unit file, source configuration file or drop-ins of update-notifier-download.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped update-notifier-download.timer
+Warning: The unit file, source configuration file or drop-ins of motd-news.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped motd-news.timer
+Warning: The unit file, source configuration file or drop-ins of snapd.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+Stopping 'snapd.service', but its triggering units are still active:
+snapd.socket
+stopped snapd.service
+Warning: The unit file, source configuration file or drop-ins of snapd.socket changed on disk. Run 'systemctl daemon-reload' to reload units.
+stopped snapd.socket
+waiting for server to shut down.... done
+server stopped
+[2026-11-04 21:21:21] ===== 회차 1
+[2026-11-04 21:21:21] burst_base_r1  B 순서 256,8,1024,4,128,16,64,32,512
+[2026-11-04 21:21:22] burst_base_r1 B=256KB 요청 3,614건, 장치 읽기 7,229건 (기대 7,228), 쓰기 0건, 0.9s, 44.85->44.85°C
+[2026-11-04 21:21:25] burst_base_r1 B=8KB 요청 96,166건, 장치 읽기 96,166건 (기대 96,166), 쓰기 2건, 2.4s, 44.85->44.85°C
+[2026-11-04 21:21:26] burst_base_r1 B=1024KB 요청 1,384건, 장치 읽기 11,072건 (기대 11,072), 쓰기 0건, 0.9s, 44.85->44.85°C
+[2026-11-04 21:21:30] burst_base_r1 B=4KB 요청 192,332건, 장치 읽기 192,336건 (기대 192,332), 쓰기 1건, 3.9s, 44.85->44.85°C
+[2026-11-04 21:21:31] burst_base_r1 B=128KB 요청 6,605건, 장치 읽기 6,605건 (기대 6,605), 쓰기 1건, 1.1s, 44.85->44.85°C
+[2026-11-04 21:21:33] burst_base_r1 B=16KB 요청 48,386건, 장치 읽기 48,387건 (기대 48,386), 쓰기 0건, 1.6s, 44.85->44.85°C
+[2026-11-04 21:21:34] burst_base_r1 B=64KB 요청 12,571건, 장치 읽기 12,571건 (기대 12,571), 쓰기 0건, 1.1s, 44.85->44.85°C
+[2026-11-04 21:21:35] burst_base_r1 B=32KB 요청 24,508건, 장치 읽기 24,508건 (기대 24,508), 쓰기 0건, 1.2s, 44.85->44.85°C
+[2026-11-04 21:21:36] burst_base_r1 B=512KB 요청 2,123건, 장치 읽기 8,492건 (기대 8,492), 쓰기 0건, 0.9s, 44.85->44.85°C
+[2026-11-04 21:21:36] 
+        requests_mean  ideal_mean  excess_over_ideal_max  read_amp_mean  wall_ms_mean  wall_ms_p50  wall_ms_p99
+4KB            300.52      300.52                      0           1.00          6.06         5.84        15.66
+8KB            150.26      150.26                      0           1.00          3.70         3.66         9.86
+16KB            75.60       75.38                      1           1.01          2.48         2.47         6.05
+32KB            38.29       37.92                      1           1.02          1.94         1.94         3.78
+64KB            19.64       19.22                      1           1.05          1.70         1.71         2.89
+128KB           10.32        9.86                      1           1.10          1.70         1.77         3.05
+256KB            5.65        5.19                      1           1.21          1.35         1.35         2.51
+512KB            3.32        3.03                      1           1.43          1.37         1.45         2.56
+1024KB           2.16        1.95                      1           1.88          1.44         1.50         2.48
+[2026-11-04 21:21:36] burst_s1_r1  B 순서 8,128,16,512,4,256,32,1024,64
+[2026-11-04 21:21:40] burst_s1_r1 B=8KB 요청 132,963건, 장치 읽기 132,963건 (기대 132,963), 쓰기 0건, 3.7s, 45.85->45.85°C
+[2026-11-04 21:21:42] burst_s1_r1 B=128KB 요청 9,384건, 장치 읽기 9,384건 (기대 9,384), 쓰기 2건, 1.6s, 45.85->45.85°C
+[2026-11-04 21:21:45] burst_s1_r1 B=16KB 요청 67,052건, 장치 읽기 67,052건 (기대 67,052), 쓰기 0건, 2.7s, 45.85->45.85°C
+[2026-11-04 21:21:46] burst_s1_r1 B=512KB 요청 3,203건, 장치 읽기 12,809건 (기대 12,809), 쓰기 0건, 1.4s, 45.85->45.85°C
+[2026-11-04 21:21:52] burst_s1_r1 B=4KB 요청 265,926건, 장치 읽기 265,926건 (기대 265,926), 쓰기 65건, 5.7s, 45.85->45.85°C
+[2026-11-04 21:21:54] burst_s1_r1 B=256KB 요청 5,258건, 장치 읽기 10,515건 (기대 10,515), 쓰기 0건, 1.3s, 45.85->45.85°C
+[2026-11-04 21:21:56] burst_s1_r1 B=32KB 요청 34,100건, 장치 읽기 34,100건 (기대 34,100), 쓰기 1건, 2.0s, 45.85->45.85°C
+[2026-11-04 21:21:57] burst_s1_r1 B=1024KB 요청 2,179건, 장치 읽기 17,426건 (기대 17,426), 쓰기 5건, 1.6s, 45.85->45.85°C
+[2026-11-04 21:21:59] burst_s1_r1 B=64KB 요청 17,610건, 장치 읽기 17,610건 (기대 17,610), 쓰기 0건, 1.7s, 45.85->45.85°C
+[2026-11-04 21:21:59] 
+        requests_mean  ideal_mean  excess_over_ideal_max  read_amp_mean  wall_ms_mean  wall_ms_p50  wall_ms_p99
+4KB            415.51      415.51                      0           1.00          8.90         9.07        14.00
+8KB            207.75      207.75                      0           1.00          5.80         5.92         9.02
+16KB           104.77      104.12                      2           1.01          4.13         4.33         5.90
+32KB            53.28       52.30                      3           1.03          3.16         3.35         4.13
+64KB            27.52       26.41                      3           1.06          2.58         2.72         3.35
+128KB           14.66       13.47                      3           1.13          2.48         2.59         3.40
+256KB            8.22        7.03                      3           1.27          1.98         2.02         2.89
+512KB            5.00        3.83                      3           1.55          2.25         2.34         3.25
+1024KB           3.40        1.95                      3           2.12          2.56         2.56         3.80
+[2026-11-04 21:21:59] burst_s16_r1  B 순서 256,512,1024,4,128,32,64,8,16
+[2026-11-04 21:22:03] burst_s16_r1 B=256KB 요청 22,257건, 장치 읽기 44,502건 (기대 44,502), 쓰기 7건, 3.6s, 45.85->46.85°C
+[2026-11-04 21:22:07] burst_s16_r1 B=512KB 요청 11,710건, 장치 읽기 46,804건 (기대 46,804), 쓰기 0건, 3.5s, 46.85->46.85°C
+[2026-11-04 21:22:10] burst_s16_r1 B=1024KB 요청 6,378건, 장치 읽기 50,976건 (기대 50,976), 쓰기 5건, 3.5s, 46.85->46.85°C
+[2026-11-04 21:22:20] burst_s16_r1 B=4KB 요청 265,926건, 장치 읽기 265,926건 (기대 265,926), 쓰기 4건, 8.8s, 46.85->46.85°C
+[2026-11-04 21:22:24] burst_s16_r1 B=128KB 요청 39,619건, 장치 읽기 39,619건 (기대 39,619), 쓰기 0건, 4.6s, 46.85->46.85°C
+[2026-11-04 21:22:29] burst_s16_r1 B=32KB 요청 61,304건, 장치 읽기 61,304건 (기대 61,304), 쓰기 26건, 4.4s, 46.85->46.85°C
+[2026-11-04 21:22:34] burst_s16_r1 B=64KB 요청 49,256건, 장치 읽기 49,256건 (기대 49,256), 쓰기 6건, 5.8s, 46.85->46.85°C
+[2026-11-04 21:22:40] burst_s16_r1 B=8KB 요청 132,963건, 장치 읽기 132,963건 (기대 132,963), 쓰기 2건, 5.1s, 46.85->46.85°C
+[2026-11-04 21:22:45] burst_s16_r1 B=16KB 요청 85,183건, 장치 읽기 85,183건 (기대 85,183), 쓰기 2건, 4.7s, 46.85->46.85°C
+[2026-11-04 21:22:45] 
+        requests_mean  ideal_mean  excess_over_ideal_max  read_amp_mean  wall_ms_mean  wall_ms_p50  wall_ms_p99
+4KB            415.51      415.51                      0           1.00         13.74        15.19        17.99
+8KB            207.75      207.75                      0           1.00          7.89         8.72        10.59
+16KB           133.10      104.12                     40           1.27          7.37         7.95        27.49
+32KB            95.79       52.30                     60           1.81          6.78         7.82         9.11
+64KB            76.96       26.41                     70           2.89          8.98         9.00        64.00
+128KB           61.90       13.47                     67           4.64          7.20         7.74        12.61
+256KB           34.78        7.03                     37           5.22          5.57         6.38         7.17
+512KB           18.30        3.83                     19           5.50          5.50         6.41         7.01
+1024KB           9.97        1.95                     11           6.01          5.45         6.35         7.08
+[2026-11-04 21:22:45] burst_s512_r1  B 순서 4,16,128,256,64,1024,512,32,8
+[2026-11-04 21:22:55] burst_s512_r1 B=4KB 요청 265,926건, 장치 읽기 265,926건 (기대 265,926), 쓰기 2건, 9.1s, 46.85->45.85°C
+[2026-11-04 21:22:59] burst_s512_r1 B=16KB 요청 85,183건, 장치 읽기 85,183건 (기대 85,183), 쓰기 2건, 4.5s, 45.85->46.85°C
+[2026-11-04 21:23:07] burst_s512_r1 B=128KB 요청 43,402건, 장치 읽기 43,402건 (기대 43,402), 쓰기 14건, 7.9s, 46.85->46.85°C
+[2026-11-04 21:23:19] burst_s512_r1 B=256KB 요청 40,411건, 장치 읽기 80,807건 (기대 80,807), 쓰기 8건, 11.9s, 46.85->46.85°C
+[2026-11-04 21:23:25] burst_s512_r1 B=64KB 요청 49,368건, 장치 읽기 49,368건 (기대 49,368), 쓰기 2건, 5.9s, 46.85->46.85°C
+[2026-11-04 21:24:03] burst_s512_r1 B=1024KB 요청 38,181건, 장치 읽기 305,212건 (기대 305,211), 쓰기 30건, 37.9s, 46.85->48.85°C
+[2026-11-04 21:24:26] burst_s512_r1 B=512KB 요청 38,920건, 장치 읽기 155,635건 (기대 155,635), 쓰기 15건, 23.0s, 48.85->48.85°C
+[2026-11-04 21:24:31] burst_s512_r1 B=32KB 요청 61,305건, 장치 읽기 61,305건 (기대 61,305), 쓰기 1건, 4.9s, 48.85->48.85°C
+[2026-11-04 21:24:37] burst_s512_r1 B=8KB 요청 132,963건, 장치 읽기 132,963건 (기대 132,963), 쓰기 2건, 5.2s, 48.85->47.85°C
+[2026-11-04 21:24:37] 
+        requests_mean  ideal_mean  excess_over_ideal_max  read_amp_mean  wall_ms_mean  wall_ms_p50  wall_ms_p99
+4KB            415.51      415.51                      0           1.00         14.21        15.68        17.83
+8KB            207.75      207.75                      0           1.00          8.11         8.92        11.10
+16KB           133.10      104.12                     40           1.27          7.00         7.93         9.51
+32KB            95.79       52.30                     60           1.81          7.58         8.25        22.14
+64KB            77.14       26.41                     70           2.90          9.17         9.04        62.05
+128KB           67.82       13.47                     75           5.07         12.40        14.64        17.03
+256KB           63.14        7.03                     77           9.40         18.65        20.40        68.85
+512KB           60.81        3.83                     79          18.08         35.98        33.69       114.27
+1024KB          59.66        1.95                     80          35.42         59.26        57.78       162.81
+[2026-11-04 21:24:37] ===== 회차 2
+[2026-11-04 21:24:37] burst_s16_r2  B 순서 128,4,64,1024,32,16,512,256,8
+[2026-11-04 21:24:43] burst_s16_r2 B=128KB 요청 39,619건, 장치 읽기 39,620건 (기대 39,619), 쓰기 2건, 5.4s, 47.85->47.85°C
+[2026-11-04 21:24:52] burst_s16_r2 B=4KB 요청 265,926건, 장치 읽기 265,927건 (기대 265,926), 쓰기 7건, 8.9s, 47.85->47.85°C
+[2026-11-04 21:24:58] burst_s16_r2 B=64KB 요청 49,256건, 장치 읽기 49,256건 (기대 49,256), 쓰기 2건, 6.2s, 47.85->47.85°C
+[2026-11-04 21:25:02] burst_s16_r2 B=1024KB 요청 6,378건, 장치 읽기 50,976건 (기대 50,976), 쓰기 5건, 3.9s, 47.85->47.85°C
+[2026-11-04 21:25:07] burst_s16_r2 B=32KB 요청 61,304건, 장치 읽기 61,304건 (기대 61,304), 쓰기 2건, 4.8s, 47.85->47.85°C
+[2026-11-04 21:25:12] burst_s16_r2 B=16KB 요청 85,183건, 장치 읽기 85,183건 (기대 85,183), 쓰기 9건, 4.7s, 47.85->47.85°C
+[2026-11-04 21:25:16] burst_s16_r2 B=512KB 요청 11,710건, 장치 읽기 46,804건 (기대 46,804), 쓰기 0건, 3.8s, 47.85->47.85°C
+[2026-11-04 21:25:20] burst_s16_r2 B=256KB 요청 22,257건, 장치 읽기 44,502건 (기대 44,502), 쓰기 2건, 4.0s, 47.85->48.85°C
+[2026-11-04 21:25:25] burst_s16_r2 B=8KB 요청 132,963건, 장치 읽기 132,963건 (기대 132,963), 쓰기 13건, 5.0s, 48.85->48.85°C
+[2026-11-04 21:25:25] 
+        requests_mean  ideal_mean  excess_over_ideal_max  read_amp_mean  wall_ms_mean  wall_ms_p50  wall_ms_p99
+4KB            415.51      415.51                      0           1.00         13.80        15.01        25.78
+8KB            207.75      207.75                      0           1.00          7.81         8.63        10.41
+16KB           133.10      104.12                     40           1.27          7.26         8.05        10.80
+32KB            95.79       52.30                     60           1.81          7.51         8.24        18.75
+64KB            76.96       26.41                     70           2.89          9.72         9.47        56.13
+128KB           61.90       13.47                     67           4.64          8.42         8.05        44.73
+256KB           34.78        7.03                     37           5.22          6.26         6.51        29.61
+512KB           18.30        3.83                     19           5.50          6.00         6.52        23.28
+1024KB           9.97        1.95                     11           6.01          6.15         6.59        20.82
+[2026-11-04 21:25:25] burst_s512_r2  B 순서 128,64,32,4,512,256,1024,8,16
+[2026-11-04 21:25:35] burst_s512_r2 B=128KB 요청 43,402건, 장치 읽기 43,402건 (기대 43,402), 쓰기 35건, 9.9s, 48.85->48.85°C
+[2026-11-04 21:25:41] burst_s512_r2 B=64KB 요청 49,368건, 장치 읽기 49,368건 (기대 49,368), 쓰기 2건, 5.6s, 48.85->47.85°C
+[2026-11-04 21:25:46] burst_s512_r2 B=32KB 요청 61,305건, 장치 읽기 61,305건 (기대 61,305), 쓰기 3건, 5.1s, 47.85->47.85°C
+[2026-11-04 21:25:55] burst_s512_r2 B=4KB 요청 265,926건, 장치 읽기 265,926건 (기대 265,926), 쓰기 3건, 8.7s, 47.85->47.85°C
+[2026-11-04 21:26:17] burst_s512_r2 B=512KB 요청 38,920건, 장치 읽기 155,635건 (기대 155,635), 쓰기 17건, 22.0s, 47.85->48.85°C
+[2026-11-04 21:26:31] burst_s512_r2 B=256KB 요청 40,411건, 장치 읽기 80,807건 (기대 80,807), 쓰기 5건, 13.9s, 48.85->48.85°C
+[2026-11-04 21:27:10] burst_s512_r2 B=1024KB 요청 38,181건, 장치 읽기 305,211건 (기대 305,211), 쓰기 28건, 38.5s, 48.85->49.85°C
+[2026-11-04 21:27:15] burst_s512_r2 B=8KB 요청 132,963건, 장치 읽기 132,963건 (기대 132,963), 쓰기 2건, 5.1s, 49.85->48.85°C
+[2026-11-04 21:27:20] burst_s512_r2 B=16KB 요청 85,183건, 장치 읽기 85,183건 (기대 85,183), 쓰기 2건, 4.9s, 48.85->48.85°C
+[2026-11-04 21:27:20] 
+        requests_mean  ideal_mean  excess_over_ideal_max  read_amp_mean  wall_ms_mean  wall_ms_p50  wall_ms_p99
+4KB            415.51      415.51                      0           1.00         13.49        14.95        17.25
+8KB            207.75      207.75                      0           1.00          7.90         8.63        11.34
+16KB           133.10      104.12                     40           1.27          7.61         8.09        28.18
+32KB            95.79       52.30                     60           1.81          7.89         8.05        47.53
+64KB            77.14       26.41                     70           2.90          8.71         8.93        57.03
+128KB           67.82       13.47                     75           5.07         15.51        16.48        74.84
+256KB           63.14        7.03                     77           9.40         21.66        21.72        87.07
+512KB           60.81        3.83                     79          18.08         34.33        33.18       111.73
+1024KB          59.66        1.95                     80          35.42         60.08        57.43       154.95
+[2026-11-04 21:27:20] burst_s1_r2  B 순서 16,1024,64,4,32,128,8,256,512
+[2026-11-04 21:27:23] burst_s1_r2 B=16KB 요청 67,052건, 장치 읽기 67,052건 (기대 67,052), 쓰기 0건, 2.5s, 48.85->48.85°C
+[2026-11-04 21:27:25] burst_s1_r2 B=1024KB 요청 2,179건, 장치 읽기 17,426건 (기대 17,426), 쓰기 0건, 1.6s, 48.85->48.85°C
+[2026-11-04 21:27:26] burst_s1_r2 B=64KB 요청 17,610건, 장치 읽기 17,610건 (기대 17,610), 쓰기 2건, 1.6s, 48.85->48.85°C
+[2026-11-04 21:27:32] burst_s1_r2 B=4KB 요청 265,926건, 장치 읽기 265,926건 (기대 265,926), 쓰기 2건, 5.5s, 48.85->48.85°C
+[2026-11-04 21:27:34] burst_s1_r2 B=32KB 요청 34,100건, 장치 읽기 34,100건 (기대 34,100), 쓰기 0건, 2.0s, 48.85->48.85°C
+[2026-11-04 21:27:36] burst_s1_r2 B=128KB 요청 9,384건, 장치 읽기 9,384건 (기대 9,384), 쓰기 0건, 1.6s, 48.85->48.85°C
+[2026-11-04 21:27:40] burst_s1_r2 B=8KB 요청 132,963건, 장치 읽기 132,963건 (기대 132,963), 쓰기 2건, 3.6s, 48.85->48.85°C
+[2026-11-04 21:27:41] burst_s1_r2 B=256KB 요청 5,258건, 장치 읽기 10,515건 (기대 10,515), 쓰기 12건, 1.3s, 48.85->48.85°C
+[2026-11-04 21:27:42] burst_s1_r2 B=512KB 요청 3,203건, 장치 읽기 12,809건 (기대 12,809), 쓰기 0건, 1.4s, 48.85->48.85°C
+[2026-11-04 21:27:42] 
+        requests_mean  ideal_mean  excess_over_ideal_max  read_amp_mean  wall_ms_mean  wall_ms_p50  wall_ms_p99
+4KB            415.51      415.51                      0           1.00          8.51         8.79        13.99
+8KB            207.75      207.75                      0           1.00          5.64         5.89         8.41
+16KB           104.77      104.12                      2           1.01          3.96         4.16         5.71
+32KB            53.28       52.30                      3           1.03          3.11         3.31         4.08
+64KB            27.52       26.41                      3           1.06          2.54         2.70         3.24
+128KB           14.66       13.47                      3           1.13          2.48         2.59         3.38
+256KB            8.22        7.03                      3           1.27          1.99         2.04         2.88
+512KB            5.00        3.83                      3           1.55          2.23         2.31         3.20
+1024KB           3.40        1.95                      3           2.12          2.56         2.55         3.84
+[2026-11-04 21:27:43] burst_base_r2  B 순서 512,64,8,128,32,16,256,1024,4
+[2026-11-04 21:27:44] burst_base_r2 B=512KB 요청 2,123건, 장치 읽기 8,492건 (기대 8,492), 쓰기 0건, 0.9s, 48.85->48.85°C
+[2026-11-04 21:27:45] burst_base_r2 B=64KB 요청 12,571건, 장치 읽기 12,571건 (기대 12,571), 쓰기 0건, 1.1s, 48.85->48.85°C
+[2026-11-04 21:27:47] burst_base_r2 B=8KB 요청 96,166건, 장치 읽기 96,166건 (기대 96,166), 쓰기 0건, 2.3s, 48.85->48.85°C
+[2026-11-04 21:27:48] burst_base_r2 B=128KB 요청 6,605건, 장치 읽기 6,605건 (기대 6,605), 쓰기 2건, 1.1s, 48.85->48.85°C
+[2026-11-04 21:27:50] burst_base_r2 B=32KB 요청 24,508건, 장치 읽기 24,508건 (기대 24,508), 쓰기 0건, 1.2s, 48.85->48.85°C
+[2026-11-04 21:27:51] burst_base_r2 B=16KB 요청 48,386건, 장치 읽기 48,386건 (기대 48,386), 쓰기 4건, 1.6s, 48.85->48.85°C
+[2026-11-04 21:27:52] burst_base_r2 B=256KB 요청 3,614건, 장치 읽기 7,228건 (기대 7,228), 쓰기 0건, 0.9s, 48.85->48.85°C
+[2026-11-04 21:27:53] burst_base_r2 B=1024KB 요청 1,384건, 장치 읽기 11,072건 (기대 11,072), 쓰기 0건, 0.9s, 48.85->48.85°C
+[2026-11-04 21:27:57] burst_base_r2 B=4KB 요청 192,332건, 장치 읽기 192,332건 (기대 192,332), 쓰기 0건, 3.6s, 48.85->48.85°C
+[2026-11-04 21:27:57] 
+        requests_mean  ideal_mean  excess_over_ideal_max  read_amp_mean  wall_ms_mean  wall_ms_p50  wall_ms_p99
+4KB            300.52      300.52                      0           1.00          5.54         5.35        14.54
+8KB            150.26      150.26                      0           1.00          3.51         3.50         9.30
+16KB            75.60       75.38                      1           1.01          2.41         2.41         5.66
+32KB            38.29       37.92                      1           1.02          1.87         1.88         3.74
+64KB            19.64       19.22                      1           1.05          1.69         1.69         2.83
+128KB           10.32        9.86                      1           1.10          1.69         1.77         3.13
+256KB            5.65        5.19                      1           1.21          1.34         1.34         2.49
+512KB            3.32        3.03                      1           1.43          1.36         1.44         2.55
+1024KB           2.16        1.95                      1           1.88          1.44         1.50         2.50
+[2026-11-04 21:27:57] 전체 완료
+[2026-11-04 21:27:57] 정리: quiet off, perf off, PostgreSQL 재시작
+Warning: The unit file, source configuration file or drop-ins of apt-daily.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started apt-daily.timer
+Warning: The unit file, source configuration file or drop-ins of apt-daily-upgrade.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started apt-daily-upgrade.timer
+Warning: The unit file, source configuration file or drop-ins of anacron.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started anacron.timer
+Warning: The unit file, source configuration file or drop-ins of fstrim.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started fstrim.timer
+Warning: The unit file, source configuration file or drop-ins of e2scrub_all.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started e2scrub_all.timer
+Warning: The unit file, source configuration file or drop-ins of fwupd-refresh.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started fwupd-refresh.timer
+Warning: The unit file, source configuration file or drop-ins of man-db.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started man-db.timer
+Warning: The unit file, source configuration file or drop-ins of logrotate.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started logrotate.timer
+Warning: The unit file, source configuration file or drop-ins of dpkg-db-backup.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started dpkg-db-backup.timer
+Warning: The unit file, source configuration file or drop-ins of sysstat-collect.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started sysstat-collect.timer
+Warning: The unit file, source configuration file or drop-ins of sysstat-summary.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started sysstat-summary.timer
+Warning: The unit file, source configuration file or drop-ins of update-notifier-download.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started update-notifier-download.timer
+Warning: The unit file, source configuration file or drop-ins of motd-news.timer changed on disk. Run 'systemctl daemon-reload' to reload units.
+started motd-news.timer
+Warning: The unit file, source configuration file or drop-ins of snapd.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+started snapd.service
+Warning: The unit file, source configuration file or drop-ins of snapd.socket changed on disk. Run 'systemctl daemon-reload' to reload units.
+started snapd.socket
+governor=schedutil

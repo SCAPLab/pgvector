@@ -1,0 +1,10 @@
+{
+  "scenario": "s512",
+  "lists_tuple_count_mismatch": 0,
+  "cold_lists_changed": 0,
+  "replay_lists_block_runs_mismatch": 0,
+  "hot_block_runs_mean": 72.869140625,
+  "hot_block_runs_pred_mean": 72.869140625,
+  "hot_lba_runs_mean": 72.873046875,
+  "all_chains_ascending": true
+}

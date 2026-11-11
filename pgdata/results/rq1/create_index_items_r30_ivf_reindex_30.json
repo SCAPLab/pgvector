@@ -1,0 +1,4 @@
+{"table": "items_r30", "index": "items_r30_ivf", "tag": "reindex_30", "rows": 7800000, "lists": 2450,
+ "seconds": 579.245263170, "index_bytes": 4270620672,
+ "max_parallel_maintenance_workers": 0, "maintenance_work_mem": "4GB",
+ "finished": "2026-11-03 21:09:35"}

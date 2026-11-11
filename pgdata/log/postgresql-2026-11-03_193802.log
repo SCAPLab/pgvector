@@ -1,0 +1,27 @@
+2026-11-03 19:38:02.797 KST [14571] LOG:  starting PostgreSQL 17.11 (Ubuntu 17.11-1.pgdg24.04+2) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-11-03 19:38:02.802 KST [14571] LOG:  listening on Unix socket "/home/dccmercury/kcs2027/ivf-frag/run/.s.PGSQL.5433"
+2026-11-03 19:38:02.818 KST [14575] LOG:  database system was shut down at 2026-11-03 19:38:02 KST
+2026-11-03 19:38:02.830 KST [14571] LOG:  database system is ready to accept connections
+2026-11-03 19:43:55.414 KST [14573] LOG:  checkpoint starting: immediate force wait
+2026-11-03 19:43:57.561 KST [14573] LOG:  checkpoint complete: wrote 14670 buffers (89.5%); 0 WAL file(s) added, 0 removed, 95 recycled; write=0.736 s, sync=0.724 s, total=2.148 s; sync files=625, longest=0.017 s, average=0.002 s; distance=1565559 kB, estimate=1565559 kB; lsn=0/62A23320, redo lsn=0/60DCE300
+2026-11-03 19:43:58.899 KST [14573] LOG:  checkpoint starting: immediate force wait
+2026-11-03 19:43:59.243 KST [14573] LOG:  checkpoint complete: wrote 5070 buffers (30.9%); 0 WAL file(s) added, 0 removed, 5 recycled; write=0.276 s, sync=0.013 s, total=0.344 s; sync files=12, longest=0.008 s, average=0.002 s; distance=75140 kB, estimate=1416517 kB; lsn=0/65AB7598, redo lsn=0/6572F5F8
+2026-11-03 19:44:15.841 KST [14573] LOG:  checkpoint starting: immediate force wait
+2026-11-03 19:44:16.432 KST [14573] LOG:  checkpoint complete: wrote 8431 buffers (51.5%); 0 WAL file(s) added, 0 removed, 22 recycled; write=0.428 s, sync=0.019 s, total=0.591 s; sync files=5, longest=0.008 s, average=0.004 s; distance=364716 kB, estimate=1311337 kB; lsn=0/7C1B2A70, redo lsn=0/7BB5A8F0
+2026-11-03 19:47:23.852 KST [14573] LOG:  checkpoint starting: immediate force wait
+2026-11-03 19:47:25.441 KST [14573] LOG:  checkpoint complete: wrote 13668 buffers (83.4%); 0 WAL file(s) added, 0 removed, 215 recycled; write=0.573 s, sync=0.010 s, total=1.589 s; sync files=15, longest=0.007 s, average=0.001 s; distance=3514549 kB, estimate=3514549 kB; lsn=1/52387E40, redo lsn=1/52387DE8
+2026-11-03 19:51:00.106 KST [14573] LOG:  checkpoint starting: immediate force wait
+2026-11-03 19:51:00.136 KST [14573] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.005 s, total=0.030 s; sync files=1, longest=0.005 s, average=0.005 s; distance=0 kB, estimate=3163094 kB; lsn=1/52387F48, redo lsn=1/52387EF0
+2026-11-03 19:58:51.494 KST [14573] LOG:  checkpoint starting: immediate force wait
+2026-11-03 19:58:52.759 KST [14573] LOG:  checkpoint complete: wrote 16187 buffers (98.8%); 0 WAL file(s) added, 0 removed, 194 recycled; write=0.361 s, sync=0.012 s, total=1.266 s; sync files=23, longest=0.005 s, average=0.001 s; distance=3179618 kB, estimate=3179618 kB; lsn=2/144A0B08, redo lsn=2/144A0AB0
+2026-11-03 19:58:55.086 KST [14573] LOG:  checkpoint starting: immediate force wait
+2026-11-03 19:58:55.118 KST [14573] LOG:  checkpoint complete: wrote 17 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.005 s, sync=0.008 s, total=0.033 s; sync files=11, longest=0.005 s, average=0.001 s; distance=58 kB, estimate=2861662 kB; lsn=2/144AF688, redo lsn=2/144AF630
+2026-11-03 19:58:55.971 KST [14573] LOG:  checkpoint starting: immediate force wait
+2026-11-03 19:58:55.995 KST [14573] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.005 s, total=0.024 s; sync files=1, longest=0.005 s, average=0.005 s; distance=6 kB, estimate=2575497 kB; lsn=2/144B0EC8, redo lsn=2/144B0E70
+2026-11-03 19:59:07.846 KST [14571] LOG:  received fast shutdown request
+2026-11-03 19:59:07.850 KST [14571] LOG:  aborting any active transactions
+2026-11-03 19:59:07.852 KST [14571] LOG:  background worker "logical replication launcher" (PID 14578) exited with exit code 1
+2026-11-03 19:59:07.859 KST [14573] LOG:  shutting down
+2026-11-03 19:59:07.863 KST [14573] LOG:  checkpoint starting: shutdown immediate
+2026-11-03 19:59:07.881 KST [14573] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.023 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=2317947 kB; lsn=2/144B0F40, redo lsn=2/144B0F40
+2026-11-03 19:59:07.918 KST [14571] LOG:  database system is shut down

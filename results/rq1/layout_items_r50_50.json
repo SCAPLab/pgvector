@@ -1,0 +1,71 @@
+{
+  "tag": "items_r50_50",
+  "index": "items_r50_ivf",
+  "relpath": "base/16384/17105",
+  "nblocks": 601295,
+  "segments": 5,
+  "index_bytes": 4925808640,
+  "heap_reltuples": 9000012,
+  "magic": "0x14ff1a7",
+  "version": 1,
+  "dims": 128,
+  "lists": 2450,
+  "list_info_pages": 164,
+  "orphan_pages": 0,
+  "total_tuples": 9000000,
+  "tuples_per_page_max": 15,
+  "tuples_per_page_mode": 15,
+  "empty_lists": 0,
+  "n_tuples": {
+    "count": 2450.0,
+    "mean": 3673.469387755102,
+    "std": 2038.9265108235336,
+    "min": 5.0,
+    "50%": 3264.5,
+    "90%": 5575.199999999999,
+    "99%": 12228.919999999931,
+    "max": 23624.0
+  },
+  "n_pages": {
+    "count": 2450.0,
+    "mean": 245.35918367346937,
+    "std": 135.90863839487938,
+    "min": 1.0,
+    "50%": 218.0,
+    "90%": 372.0999999999999,
+    "99%": 815.6899999999955,
+    "max": 1575.0
+  },
+  "block_runs": {
+    "count": 2450.0,
+    "mean": 1.0,
+    "std": 0.0,
+    "min": 1.0,
+    "50%": 1.0,
+    "90%": 1.0,
+    "99%": 1.0,
+    "max": 1.0
+  },
+  "lba_runs": {
+    "count": 2450.0,
+    "mean": 1.013469387755102,
+    "std": 0.2255210474334411,
+    "min": 1.0,
+    "50%": 1.0,
+    "90%": 1.0,
+    "99%": 1.0,
+    "max": 7.0
+  },
+  "lists_lba_gt_block_runs": 16,
+  "all_chains_ascending": true,
+  "all_insert_page_last": true,
+  "partition": "nvme0n1p2",
+  "disk": "nvme0n1",
+  "partition_start_bytes": 2097152,
+  "fs_extents_total": 42,
+  "fiemap_flags_seen": [
+    "0x0",
+    "0x1"
+  ],
+  "created": "2026-11-03 21:57:05"
+}

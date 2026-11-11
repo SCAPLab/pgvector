@@ -1,0 +1,4 @@
+SET
+INFO:  index "public.items_ivf" was reindexed
+DETAIL:  CPU: user: 276.54 s, system: 32.50 s, elapsed: 370.38 s.
+REINDEX

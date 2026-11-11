@@ -1,0 +1,2 @@
+SET
+ERROR:  canceling statement due to user request

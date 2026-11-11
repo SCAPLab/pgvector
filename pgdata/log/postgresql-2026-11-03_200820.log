@@ -1,0 +1,15 @@
+2026-11-03 20:08:20.527 KST [16297] LOG:  starting PostgreSQL 17.11 (Ubuntu 17.11-1.pgdg24.04+2) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-11-03 20:08:20.532 KST [16297] LOG:  listening on Unix socket "/home/dccmercury/kcs2027/ivf-frag/run/.s.PGSQL.5433"
+2026-11-03 20:08:20.568 KST [16301] LOG:  database system was shut down at 2026-11-03 20:08:19 KST
+2026-11-03 20:08:20.577 KST [16297] LOG:  database system is ready to accept connections
+2026-11-03 20:09:31.941 KST [16299] LOG:  checkpoint starting: immediate force wait
+2026-11-03 20:09:32.539 KST [16299] LOG:  checkpoint complete: wrote 14576 buffers (89.0%); 0 WAL file(s) added, 45 removed, 0 recycled; write=0.329 s, sync=0.012 s, total=0.599 s; sync files=15, longest=0.005 s, average=0.001 s; distance=733568 kB, estimate=733568 kB; lsn=2/411112F8, redo lsn=2/411112A0
+2026-11-03 20:09:33.428 KST [16299] LOG:  checkpoint starting: immediate force wait
+2026-11-03 20:09:33.452 KST [16299] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.004 s, total=0.024 s; sync files=1, longest=0.004 s, average=0.004 s; distance=6 kB, estimate=660212 kB; lsn=2/41112B48, redo lsn=2/41112AF0
+2026-11-03 20:09:46.328 KST [16297] LOG:  received fast shutdown request
+2026-11-03 20:09:46.332 KST [16297] LOG:  aborting any active transactions
+2026-11-03 20:09:46.334 KST [16297] LOG:  background worker "logical replication launcher" (PID 16304) exited with exit code 1
+2026-11-03 20:09:46.341 KST [16299] LOG:  shutting down
+2026-11-03 20:09:46.345 KST [16299] LOG:  checkpoint starting: shutdown immediate
+2026-11-03 20:09:46.363 KST [16299] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.022 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=594191 kB; lsn=2/41112BF8, redo lsn=2/41112BF8
+2026-11-03 20:09:46.403 KST [16297] LOG:  database system is shut down

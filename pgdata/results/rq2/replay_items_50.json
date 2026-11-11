@@ -1,0 +1,72 @@
+{
+  "tag": "items_50",
+  "files": "data/snapshots/items_50",
+  "reps": 1,
+  "sample": 500,
+  "block_runs_mean": 82.306,
+  "summary": {
+    "4KB": {
+      "requests_mean": 488.708,
+      "ideal_mean": 488.708,
+      "excess_over_ideal_max": 0,
+      "read_amp_mean": 1.0,
+      "wall_ms_mean": 18.167
+    },
+    "8KB": {
+      "requests_mean": 244.354,
+      "ideal_mean": 244.354,
+      "excess_over_ideal_max": 0,
+      "read_amp_mean": 1.0,
+      "wall_ms_mean": 10.063
+    },
+    "16KB": {
+      "requests_mean": 163.332,
+      "ideal_mean": 122.438,
+      "excess_over_ideal_max": 182,
+      "read_amp_mean": 1.338,
+      "wall_ms_mean": 9.027
+    },
+    "32KB": {
+      "requests_mean": 122.818,
+      "ideal_mean": 61.474,
+      "excess_over_ideal_max": 274,
+      "read_amp_mean": 2.014,
+      "wall_ms_mean": 8.88
+    },
+    "64KB": {
+      "requests_mean": 102.55,
+      "ideal_mean": 30.972,
+      "excess_over_ideal_max": 320,
+      "read_amp_mean": 3.366,
+      "wall_ms_mean": 9.722
+    },
+    "128KB": {
+      "requests_mean": 92.434,
+      "ideal_mean": 15.724,
+      "excess_over_ideal_max": 342,
+      "read_amp_mean": 6.074,
+      "wall_ms_mean": 15.747
+    },
+    "256KB": {
+      "requests_mean": 87.384,
+      "ideal_mean": 8.104,
+      "excess_over_ideal_max": 353,
+      "read_amp_mean": 11.49,
+      "wall_ms_mean": 20.967
+    },
+    "512KB": {
+      "requests_mean": 84.832,
+      "ideal_mean": 4.288,
+      "excess_over_ideal_max": 359,
+      "read_amp_mean": 22.317,
+      "wall_ms_mean": 36.591
+    },
+    "1024KB": {
+      "requests_mean": 83.57,
+      "ideal_mean": 2.384,
+      "excess_over_ideal_max": 362,
+      "read_amp_mean": 43.981,
+      "wall_ms_mean": 74.43
+    }
+  }
+}

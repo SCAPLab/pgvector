@@ -1,0 +1,80 @@
+governor=performance
+stopped apt-daily.timer
+stopped apt-daily-upgrade.timer
+stopped anacron.timer
+stopped fstrim.timer
+stopped e2scrub_all.timer
+stopped fwupd-refresh.timer
+stopped man-db.timer
+stopped logrotate.timer
+stopped dpkg-db-backup.timer
+stopped sysstat-collect.timer
+stopped sysstat-summary.timer
+stopped update-notifier-download.timer
+stopped motd-news.timer
+Stopping 'snapd.service', but its triggering units are still active:
+snapd.socket
+stopped snapd.service
+stopped snapd.socket
+[2026-11-04 11:35:19] run test_mem: mem=mem load=60% (30.91 QPS) workers=4
+[2026-11-04 11:43:38]   재빌드 376초
+[2026-11-04 11:44:39]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 11:48:14] rq3: recall@10 = 0.9820 (tie-aware 0.9820)
+  재빌드 376s, tps 30.800596, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9820
+started apt-daily.timer
+started apt-daily-upgrade.timer
+started anacron.timer
+started fstrim.timer
+started e2scrub_all.timer
+started fwupd-refresh.timer
+started man-db.timer
+started logrotate.timer
+started dpkg-db-backup.timer
+started sysstat-collect.timer
+started sysstat-summary.timer
+started update-notifier-download.timer
+started motd-news.timer
+started snapd.service
+started snapd.socket
+governor=schedutil
+[2026-11-04 11:48:16] 정리 끝 (exit 0)
+governor=performance
+stopped apt-daily.timer
+stopped apt-daily-upgrade.timer
+stopped anacron.timer
+stopped fstrim.timer
+stopped e2scrub_all.timer
+stopped fwupd-refresh.timer
+stopped man-db.timer
+stopped logrotate.timer
+stopped dpkg-db-backup.timer
+stopped sysstat-collect.timer
+stopped sysstat-summary.timer
+stopped update-notifier-download.timer
+stopped motd-news.timer
+Stopping 'snapd.service', but its triggering units are still active:
+snapd.socket
+stopped snapd.service
+stopped snapd.socket
+[2026-11-04 11:48:20] run test_io: mem=io load=60% (4.65 QPS) workers=4
+[2026-11-04 11:57:36]   재빌드 442초
+[2026-11-04 11:58:42]   재빌드 후 recall (8GB + prewarm)
+[2026-11-04 12:02:06] rq3: recall@10 = 0.9816 (tie-aware 0.9816)
+  재빌드 442s, tps 4.61687, WAL 4.53GiB, 새 인덱스 4.59GiB, recall 0.9816
+started apt-daily.timer
+started apt-daily-upgrade.timer
+started anacron.timer
+started fstrim.timer
+started e2scrub_all.timer
+started fwupd-refresh.timer
+started man-db.timer
+started logrotate.timer
+started dpkg-db-backup.timer
+started sysstat-collect.timer
+started sysstat-summary.timer
+started update-notifier-download.timer
+started motd-news.timer
+started snapd.service
+started snapd.socket
+governor=schedutil
+[2026-11-04 12:02:08] 정리 끝 (exit 0)

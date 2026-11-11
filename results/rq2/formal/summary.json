@@ -1,0 +1,111 @@
+{
+  "conditions": {
+    "items_0": {
+      "stage": 0,
+      "kind": "build",
+      "block_runs_mean": 1.0,
+      "requests_1mb": 2.264,
+      "plateau_ratio_1mb": 2.264,
+      "best_B_kb": 256,
+      "best_wall_ms": 1.4370918,
+      "best_B_kb_by_median": 256,
+      "wall_cv_max": 0.02035008059246425
+    },
+    "items_10": {
+      "stage": 10,
+      "kind": "insert",
+      "block_runs_mean": 17.276,
+      "requests_1mb": 18.54,
+      "plateau_ratio_1mb": 1.0731650845103033,
+      "best_B_kb": 32,
+      "best_wall_ms": 3.3234775999999995,
+      "best_B_kb_by_median": 32,
+      "wall_cv_max": 0.13037008065110814,
+      "reindex_best_B_kb": 512,
+      "best_vs_best_slowdown": 2.163525988239713,
+      "best_vs_best_slowdown_by_median": 2.17819777411338,
+      "slowdown_at_1mb": 11.422497116390996
+    },
+    "items_r10_10": {
+      "stage": 10,
+      "kind": "reindex",
+      "block_runs_mean": 1.0,
+      "requests_1mb": 2.328,
+      "plateau_ratio_1mb": 2.328,
+      "best_B_kb": 512,
+      "best_wall_ms": 1.53613944,
+      "best_B_kb_by_median": 512,
+      "wall_cv_max": 0.02906013318508325
+    },
+    "items_30": {
+      "stage": 30,
+      "kind": "insert",
+      "block_runs_mean": 49.816,
+      "requests_1mb": 51.08,
+      "plateau_ratio_1mb": 1.0253733740163802,
+      "best_B_kb": 16,
+      "best_wall_ms": 6.614456240000001,
+      "best_B_kb_by_median": 32,
+      "wall_cv_max": 0.21067044392817005,
+      "reindex_best_B_kb": 256,
+      "best_vs_best_slowdown": 3.992048272472457,
+      "best_vs_best_slowdown_by_median": 3.909155257190371,
+      "slowdown_at_1mb": 27.80926270420849
+    },
+    "items_r30_30": {
+      "stage": 30,
+      "kind": "reindex",
+      "block_runs_mean": 1.0,
+      "requests_1mb": 2.604,
+      "plateau_ratio_1mb": 2.604,
+      "best_B_kb": 256,
+      "best_wall_ms": 1.6569078799999999,
+      "best_B_kb_by_median": 256,
+      "wall_cv_max": 0.03191561876011642
+    },
+    "items_50": {
+      "stage": 50,
+      "kind": "insert",
+      "block_runs_mean": 82.306,
+      "requests_1mb": 83.57,
+      "plateau_ratio_1mb": 1.0153573251038805,
+      "best_B_kb": 16,
+      "best_wall_ms": 9.656596760000003,
+      "best_B_kb_by_median": 16,
+      "wall_cv_max": 0.20632956326907942,
+      "reindex_best_B_kb": 512,
+      "best_vs_best_slowdown": 5.273133718166762,
+      "best_vs_best_slowdown_by_median": 5.121491590205557,
+      "slowdown_at_1mb": 46.159748257262464
+    },
+    "items_r50_50": {
+      "stage": 50,
+      "kind": "reindex",
+      "block_runs_mean": 1.0,
+      "requests_1mb": 2.944,
+      "plateau_ratio_1mb": 2.944,
+      "best_B_kb": 512,
+      "best_wall_ms": 1.83128236,
+      "best_B_kb_by_median": 512,
+      "wall_cv_max": 0.033643924876709225
+    }
+  },
+  "device_noise": {
+    "extra_read_ios_total": 0,
+    "extra_read_bytes_total": 0,
+    "replay_read_ios_total": 21243375,
+    "write_ios_total": 1074,
+    "passes_with_extra_reads": 0,
+    "passes": 315,
+    "measure_seconds_total": 1417.9320000000002,
+    "temp_c_min": 40.85,
+    "temp_c_max": 50.85
+  },
+  "rounds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

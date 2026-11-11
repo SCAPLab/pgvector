@@ -1,0 +1,12 @@
+{
+  "database": "rq3_tpl",
+  "stage": 50,
+  "probes": 50,
+  "n_queries": 10000,
+  "recall_at_10": 0.9812200000000001,
+  "recall_at_10_tie_aware": 0.9812700000000001,
+  "plan": "Limit  (cost=32065.23..32090.54 rows=10 width=16)\n  InitPlan 1\n    ->  Index Scan using queries_pkey on queries  (cost=0.29..8.30 rows=1 width=520)\n          Index Cond: (id = 1)\n  ->  Index Scan using items_ivf on items  (cost=32056.93..22803205.34 rows=9000292 width=16)\n        Order By: (embedding <-> (InitPlan 1).col1)",
+  "compare_file": "results/rq1/result_ids_items_50.npy",
+  "identical_to_compare": true,
+  "rows_differing_from_compare": 0
+}

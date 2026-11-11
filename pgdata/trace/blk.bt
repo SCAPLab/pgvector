@@ -1,0 +1,27 @@
+// 블록 장치 요청 수·크기·지연 (문서 3.4절 교차검증). 아직 실행 검증 전 초안.
+//   sudo ivf-root trace blk <dev_t> <초>
+//   dev_t = (major << 20) | minor   (nvme0n1 = 259:0 -> 271581184)
+// rwbs 별(R, W, WS, ...)로 나눠 집계한다.
+
+tracepoint:block:block_rq_issue /args.dev == $1/
+{
+  @start[args.sector] = nsecs;
+  @requests[str(args.rwbs)] = count();
+  @bytes[str(args.rwbs)] = sum(args.bytes);
+  @size_kb[str(args.rwbs)] = hist(args.bytes / 1024);
+}
+
+tracepoint:block:block_rq_complete /args.dev == $1 && @start[args.sector]/
+{
+  @lat_us[str(args.rwbs)] = hist((nsecs - @start[args.sector]) / 1000);
+  delete(@start[args.sector]);
+}
+
+interval:s:1
+{
+  @elapsed = count();
+  if ((uint64)@elapsed >= $2) {
+    clear(@start);
+    exit();
+  }
+}

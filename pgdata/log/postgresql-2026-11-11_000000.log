@@ -1,0 +1,72 @@
+2026-11-11 22:17:05.756 KST [358545] FATAL:  database "burst_s1" does not exist
+2026-11-11 22:17:05.756 KST [358545] DETAIL:  The database subdirectory "base/17489" is missing.
+2026-11-11 22:17:06.623 KST [358546] FATAL:  database "burst_base" does not exist
+2026-11-11 22:17:06.623 KST [358546] DETAIL:  The database subdirectory "base/17150" is missing.
+2026-11-11 22:17:11.399 KST [358550] FATAL:  database "rq3" does not exist
+2026-11-11 22:17:11.399 KST [358550] DETAIL:  The database subdirectory "base/17148" is missing.
+2026-11-11 22:17:14.655 KST [358558] FATAL:  database "rq3_tpl" does not exist
+2026-11-11 22:17:14.655 KST [358558] DETAIL:  The database subdirectory "base/17107" is missing.
+2026-11-11 22:17:24.506 KST [358569] FATAL:  database "template1" does not exist
+2026-11-11 22:17:24.506 KST [358569] DETAIL:  The database subdirectory "base/1" is missing.
+2026-11-11 22:17:26.080 KST [358570] FATAL:  database "ivf" does not exist
+2026-11-11 22:17:26.080 KST [358570] DETAIL:  The database subdirectory "base/16384" is missing.
+2026-11-11 22:17:41.572 KST [358578] FATAL:  database "postgres" does not exist
+2026-11-11 22:17:41.572 KST [358578] DETAIL:  The database subdirectory "base/5" is missing.
+2026-11-11 22:17:42.522 KST [358580] FATAL:  database "burst_s512" does not exist
+2026-11-11 22:17:42.522 KST [358580] DETAIL:  The database subdirectory "base/17493" is missing.
+2026-11-11 22:17:45.068 KST [358581] FATAL:  database "burst_s16" does not exist
+2026-11-11 22:17:45.068 KST [358581] DETAIL:  The database subdirectory "base/17491" is missing.
+2026-11-11 22:18:05.770 KST [358597] FATAL:  database "burst_s1" does not exist
+2026-11-11 22:18:05.770 KST [358597] DETAIL:  The database subdirectory "base/17489" is missing.
+2026-11-11 22:18:06.623 KST [358598] FATAL:  database "burst_base" does not exist
+2026-11-11 22:18:06.623 KST [358598] DETAIL:  The database subdirectory "base/17150" is missing.
+2026-11-11 22:18:11.403 KST [358599] FATAL:  database "rq3" does not exist
+2026-11-11 22:18:11.403 KST [358599] DETAIL:  The database subdirectory "base/17148" is missing.
+2026-11-11 22:18:14.657 KST [358600] FATAL:  database "rq3_tpl" does not exist
+2026-11-11 22:18:14.657 KST [358600] DETAIL:  The database subdirectory "base/17107" is missing.
+2026-11-11 22:18:24.515 KST [358601] FATAL:  database "template1" does not exist
+2026-11-11 22:18:24.515 KST [358601] DETAIL:  The database subdirectory "base/1" is missing.
+2026-11-11 22:18:26.081 KST [358602] FATAL:  database "ivf" does not exist
+2026-11-11 22:18:26.081 KST [358602] DETAIL:  The database subdirectory "base/16384" is missing.
+2026-11-11 22:18:41.587 KST [358610] FATAL:  database "postgres" does not exist
+2026-11-11 22:18:41.587 KST [358610] DETAIL:  The database subdirectory "base/5" is missing.
+2026-11-11 22:18:42.622 KST [358611] FATAL:  database "burst_s512" does not exist
+2026-11-11 22:18:42.622 KST [358611] DETAIL:  The database subdirectory "base/17493" is missing.
+2026-11-11 22:18:45.070 KST [358612] FATAL:  database "burst_s16" does not exist
+2026-11-11 22:18:45.070 KST [358612] DETAIL:  The database subdirectory "base/17491" is missing.
+2026-11-11 22:19:05.790 KST [358620] FATAL:  database "burst_s1" does not exist
+2026-11-11 22:19:05.790 KST [358620] DETAIL:  The database subdirectory "base/17489" is missing.
+2026-11-11 22:19:06.624 KST [358621] FATAL:  database "burst_base" does not exist
+2026-11-11 22:19:06.624 KST [358621] DETAIL:  The database subdirectory "base/17150" is missing.
+2026-11-11 22:19:11.407 KST [358622] FATAL:  database "rq3" does not exist
+2026-11-11 22:19:11.407 KST [358622] DETAIL:  The database subdirectory "base/17148" is missing.
+2026-11-11 22:19:14.659 KST [358623] FATAL:  database "rq3_tpl" does not exist
+2026-11-11 22:19:14.659 KST [358623] DETAIL:  The database subdirectory "base/17107" is missing.
+2026-11-11 22:19:24.525 KST [358624] FATAL:  database "template1" does not exist
+2026-11-11 22:19:24.525 KST [358624] DETAIL:  The database subdirectory "base/1" is missing.
+2026-11-11 22:19:26.082 KST [358625] FATAL:  database "ivf" does not exist
+2026-11-11 22:19:26.082 KST [358625] DETAIL:  The database subdirectory "base/16384" is missing.
+2026-11-11 22:19:41.602 KST [358633] FATAL:  database "postgres" does not exist
+2026-11-11 22:19:41.602 KST [358633] DETAIL:  The database subdirectory "base/5" is missing.
+2026-11-11 22:19:42.622 KST [358634] FATAL:  database "burst_s512" does not exist
+2026-11-11 22:19:42.622 KST [358634] DETAIL:  The database subdirectory "base/17493" is missing.
+2026-11-11 22:19:45.072 KST [358635] FATAL:  database "burst_s16" does not exist
+2026-11-11 22:19:45.072 KST [358635] DETAIL:  The database subdirectory "base/17491" is missing.
+2026-11-11 22:20:05.810 KST [358656] FATAL:  database "burst_s1" does not exist
+2026-11-11 22:20:05.810 KST [358656] DETAIL:  The database subdirectory "base/17489" is missing.
+2026-11-11 22:20:06.624 KST [358658] FATAL:  database "burst_base" does not exist
+2026-11-11 22:20:06.624 KST [358658] DETAIL:  The database subdirectory "base/17150" is missing.
+2026-11-11 22:20:11.411 KST [358659] FATAL:  database "rq3" does not exist
+2026-11-11 22:20:11.411 KST [358659] DETAIL:  The database subdirectory "base/17148" is missing.
+2026-11-11 22:20:14.662 KST [358660] FATAL:  database "rq3_tpl" does not exist
+2026-11-11 22:20:14.662 KST [358660] DETAIL:  The database subdirectory "base/17107" is missing.
+2026-11-11 22:20:24.534 KST [358664] FATAL:  database "template1" does not exist
+2026-11-11 22:20:24.534 KST [358664] DETAIL:  The database subdirectory "base/1" is missing.
+2026-11-11 22:20:26.083 KST [358665] FATAL:  database "ivf" does not exist
+2026-11-11 22:20:26.083 KST [358665] DETAIL:  The database subdirectory "base/16384" is missing.
+2026-11-11 22:20:41.616 KST [358673] FATAL:  database "postgres" does not exist
+2026-11-11 22:20:41.616 KST [358673] DETAIL:  The database subdirectory "base/5" is missing.
+2026-11-11 22:20:42.623 KST [358674] FATAL:  database "burst_s512" does not exist
+2026-11-11 22:20:42.623 KST [358674] DETAIL:  The database subdirectory "base/17493" is missing.
+2026-11-11 22:20:45.074 KST [358678] FATAL:  database "burst_s16" does not exist
+2026-11-11 22:20:45.074 KST [358678] DETAIL:  The database subdirectory "base/17491" is missing.

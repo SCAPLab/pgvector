@@ -1,0 +1,7 @@
+2026-11-04 09:49:46.562 KST [20032] LOG:  received fast shutdown request
+2026-11-04 09:49:46.571 KST [20032] LOG:  aborting any active transactions
+2026-11-04 09:49:46.574 KST [20032] LOG:  background worker "logical replication launcher" (PID 20039) exited with exit code 1
+2026-11-04 09:49:46.574 KST [20034] LOG:  shutting down
+2026-11-04 09:49:46.578 KST [20034] LOG:  checkpoint starting: shutdown immediate
+2026-11-04 09:49:46.596 KST [20034] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.023 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=9/33AA7348, redo lsn=9/33AA7348
+2026-11-04 09:49:46.602 KST [20032] LOG:  database system is shut down

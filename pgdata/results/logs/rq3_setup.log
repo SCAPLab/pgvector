@@ -1,0 +1,15 @@
+[2026-11-04 11:16:59] template 생성 (ivf → rq3_tpl, FILE_COPY)
+  rows   |  heap   |   ivf   
+---------+---------+---------
+ 9000000 | 5022 MB | 4698 MB
+(1 row)
+
+[2026-11-04 11:18:24] 검증 1: 인덱스 블록 배치가 layout_items_50과 같은지
+[2026-11-04 11:18:25] items_ivf: base/17107/17078, 601315 blocks, 5 segments
+[2026-11-04 11:18:31] 읽기 6.3s
+[2026-11-04 11:18:32] lists 2450, tuples 9000000, pages/list mean 245.4, block_runs mean 82.64 max 577, lba_runs mean 82.65, orphans 0, tuples/page mode 15
+layout 동일: True (lists 2450, block_runs 평균 82.64)
+[2026-11-04 11:18:33] 검증 2: 쿼리 결과 id가 items_50 측정 때와 같은지
+[2026-11-04 11:21:58] rq3_tpl: recall@10 = 0.9812 (tie-aware 0.9813), 비교 파일과 동일: True
+[2026-11-04 11:22:00] template 준비 끝
+[2026-11-04 11:22:00] 정리 끝 (exit 0)

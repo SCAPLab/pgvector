@@ -1,0 +1,11 @@
+2026-11-03 21:27:09.505 KST [18868] LOG:  starting PostgreSQL 17.11 (Ubuntu 17.11-1.pgdg24.04+2) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0, 64-bit
+2026-11-03 21:27:09.510 KST [18868] LOG:  listening on Unix socket "/home/dccmercury/kcs2027/ivf-frag/run/.s.PGSQL.5433"
+2026-11-03 21:27:09.525 KST [18872] LOG:  database system was shut down at 2026-11-03 21:27:09 KST
+2026-11-03 21:27:09.534 KST [18868] LOG:  database system is ready to accept connections
+2026-11-03 21:43:38.692 KST [18868] LOG:  received fast shutdown request
+2026-11-03 21:43:38.701 KST [18868] LOG:  aborting any active transactions
+2026-11-03 21:43:38.703 KST [18868] LOG:  background worker "logical replication launcher" (PID 18875) exited with exit code 1
+2026-11-03 21:43:38.954 KST [18870] LOG:  shutting down
+2026-11-03 21:43:38.958 KST [18870] LOG:  checkpoint starting: shutdown immediate
+2026-11-03 21:43:38.996 KST [18870] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.021 s, sync=0.003 s, total=0.043 s; sync files=2, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=6/CBEE20B0, redo lsn=6/CBEE20B0
+2026-11-03 21:43:40.062 KST [18868] LOG:  database system is shut down

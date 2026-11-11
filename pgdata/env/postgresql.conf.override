@@ -1,0 +1,23 @@
+# ivf-frag 실험 설정 (문서 1.5절 고정값). setup_pg.sh가 postgresql.conf 끝에 include한다.
+# 조건별로 바꾸는 값(shared_buffers, max_parallel_maintenance_workers)은
+# pg_ctl -o "-c ..." 로 덮어쓴다.
+
+debug_io_direct = 'data'
+shared_buffers = 128MB
+maintenance_work_mem = 4GB
+max_parallel_maintenance_workers = 0
+jit = off
+checkpoint_timeout = 1h
+max_wal_size = 20GB
+ivfflat.probes = 50
+
+# 접속: TCP 없이 unix socket만, 소유자만 접근
+listen_addresses = ''
+port = 5433
+unix_socket_directories = '/home/dccmercury/kcs2027/ivf-frag/run'
+unix_socket_permissions = 0700
+
+# 로그
+logging_collector = on
+log_directory = 'log'
+log_checkpoints = on

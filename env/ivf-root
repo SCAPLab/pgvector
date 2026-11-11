@@ -1,0 +1,161 @@
+#!/bin/bash
+# ivf-root: 측정 중 root 권한이 필요한 작업만 모은 도우미.
+# root_setup.sh가 /usr/local/sbin/ivf-root 로 복사(root 소유)하고,
+# sudoers에서 이 파일만 비밀번호 없이 허용한다. 인자는 아래 고정된 값만 받는다.
+# 수정하면 root_setup.sh를 다시 실행해야 반영된다.
+
+set -euo pipefail
+export PATH=/usr/sbin:/usr/bin:/sbin:/bin
+umask 022
+
+STATE_DIR=/run/ivf-frag
+BT_DIR=/usr/local/lib/ivf-frag/bt
+NVME_CTRL=/dev/nvme0
+# 측정 중 디스크 I/O를 일으킬 수 있는 예약 작업. 실행 중인 apt 작업은 건드리지 않는다.
+QUIET_UNITS=(
+  apt-daily.timer apt-daily-upgrade.timer anacron.timer
+  fstrim.timer e2scrub_all.timer fwupd-refresh.timer man-db.timer logrotate.timer
+  dpkg-db-backup.timer sysstat-collect.timer sysstat-summary.timer
+  update-notifier-download.timer motd-news.timer apport-autoreport.timer ua-timer.timer
+  snapd.snap-repair.timer snapd.service snapd.socket
+)
+
+die() { echo "ivf-root: $*" >&2; exit 1; }
+
+usage() {
+  cat <<'EOF'
+사용법: sudo ivf-root <명령>
+  drop-caches          sync 후 page cache 비우기
+  perf on|off          CPU governor를 performance로 / 원래 값으로
+  noatime on|off       / 를 noatime으로 다시 마운트 / relatime으로 복구
+  quiet on|off         디스크를 건드리는 예약 작업 중지 / 재개
+  trace NAME [N ...]   /usr/local/lib/ivf-frag/bt/NAME.bt 를 bpftrace로 실행 (인자는 정수만)
+  nvme-info            SSD 정보 (id-ctrl, smart-log)
+  status               현재 상태
+EOF
+}
+
+[ "$(id -u)" -eq 0 ] || die "root로 실행해야 합니다 (sudo ivf-root ...)"
+install -d -m 0755 "$STATE_DIR"
+
+set_governor() {
+  local g=$1 f
+  for f in /sys/devices/system/cpu/cpu[0-9]*/cpufreq/scaling_governor; do
+    echo "$g" > "$f"
+  done
+}
+
+root_owned_not_writable() {
+  # 소유자가 root이고 group/other 쓰기 권한이 없어야 한다
+  local p=$1 uid mode
+  uid=$(stat -c %u "$p")
+  mode=$(stat -c %a "$p")
+  [ "$uid" -eq 0 ] && [ $(( 8#$mode & 8#022 )) -eq 0 ]
+}
+
+cmd=${1:-}
+case "$cmd" in
+  drop-caches)
+    sync
+    echo 3 > /proc/sys/vm/drop_caches
+    echo "dropped"
+    ;;
+
+  perf)
+    case "${2:-}" in
+      on)
+        [ -f "$STATE_DIR/governor.prev" ] || \
+          cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor > "$STATE_DIR/governor.prev"
+        set_governor performance
+        ;;
+      off)
+        prev=schedutil
+        [ -f "$STATE_DIR/governor.prev" ] && prev=$(cat "$STATE_DIR/governor.prev")
+        [[ $prev =~ ^[a-z]+$ ]] || prev=schedutil
+        set_governor "$prev"
+        rm -f "$STATE_DIR/governor.prev"
+        ;;
+      *) die "perf on|off" ;;
+    esac
+    echo "governor=$(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor)"
+    ;;
+
+  noatime)
+    case "${2:-}" in
+      on)  mount -o remount,noatime / ;;
+      off) mount -o remount,relatime / ;;
+      *) die "noatime on|off" ;;
+    esac
+    findmnt -no OPTIONS /
+    ;;
+
+  quiet)
+    case "${2:-}" in
+      on)
+        : > "$STATE_DIR/quiet.stopped"
+        for u in "${QUIET_UNITS[@]}"; do
+          if systemctl is-active --quiet "$u"; then
+            systemctl stop "$u" && echo "$u" >> "$STATE_DIR/quiet.stopped" && echo "stopped $u"
+          fi
+        done
+        for u in apt-daily.service apt-daily-upgrade.service; do
+          if systemctl is-active --quiet "$u"; then
+            echo "주의: $u 실행 중 (끝날 때까지 기다린 뒤 측정하세요)"
+          fi
+        done
+        ;;
+      off)
+        if [ -f "$STATE_DIR/quiet.stopped" ]; then
+          while read -r u; do
+            [ -n "$u" ] && systemctl start "$u" && echo "started $u"
+          done < "$STATE_DIR/quiet.stopped"
+          rm -f "$STATE_DIR/quiet.stopped"
+        else
+          echo "중지한 기록 없음"
+        fi
+        ;;
+      *) die "quiet on|off" ;;
+    esac
+    ;;
+
+  trace)
+    name=${2:-}
+    [[ $name =~ ^[a-z0-9_]+$ ]] || die "trace 이름은 [a-z0-9_]만 허용"
+    f=$BT_DIR/$name.bt
+    [ -f "$f" ] && [ ! -L "$f" ] || die "$f 없음"
+    root_owned_not_writable "$BT_DIR" || die "$BT_DIR 권한이 안전하지 않음"
+    root_owned_not_writable "$f" || die "$f 권한이 안전하지 않음"
+    shift 2
+    for a in "$@"; do
+      [[ $a =~ ^[0-9]+$ ]] || die "trace 인자는 정수만 허용"
+    done
+    exec bpftrace "$f" "$@"
+    ;;
+
+  nvme-info)
+    command -v nvme >/dev/null || die "nvme-cli 없음"
+    nvme id-ctrl "$NVME_CTRL"
+    nvme smart-log "$NVME_CTRL"
+    ;;
+
+  status)
+    echo "governor : $(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor)"
+    echo "boost    : $(cat /sys/devices/system/cpu/cpufreq/boost 2>/dev/null || echo n/a)"
+    echo "/ mount  : $(findmnt -no OPTIONS /)"
+    echo "swap     : $(swapon --show=NAME,SIZE,USED --noheadings | tr '\n' ' ')"
+    echo "quiet    : $( [ -f "$STATE_DIR/quiet.stopped" ] && echo on || echo off )"
+    for u in "${QUIET_UNITS[@]}"; do
+      printf '  %-34s %s\n' "$u" "$(systemctl is-active "$u" 2>/dev/null || true)"
+    done
+    echo "bt 스크립트: $(ls "$BT_DIR" 2>/dev/null | tr '\n' ' ')"
+    ;;
+
+  ""|-h|--help|help)
+    usage
+    ;;
+
+  *)
+    usage
+    exit 2
+    ;;
+esac

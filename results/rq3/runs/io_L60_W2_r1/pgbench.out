@@ -1,0 +1,15 @@
+pgbench (17.11 (Ubuntu 17.11-1.pgdg24.04+2))
+transaction type: rq3/q.sql
+scaling factor: 1
+query mode: simple
+number of clients: 16
+number of threads: 8
+maximum number of tries: 1
+duration: 7200 s
+number of transactions actually processed: 4979
+number of failed transactions: 0 (0.000%)
+latency average = 2951.728 ms
+latency stddev = 3565.881 ms
+rate limit schedule lag: avg 1136.241 (max 27466.832) ms
+initial connection time = 12.470 ms
+tps = 4.693510 (without initial connection time)
